@@ -256,10 +256,43 @@ h3 {
 }
 
 .direction-grid,
-.project-grid {
+.project-grid,
+.video-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.2fr) minmax(260px, 0.8fr);
+  gap: 28px;
+  margin-bottom: 18px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.featured-project h3 {
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1.08;
+}
+
+.project-points {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-points li {
+  padding: 10px 0 10px 16px;
+  border-left: 3px solid var(--accent);
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .direction,
@@ -283,6 +316,65 @@ h3 {
 .project-card p:last-child,
 .publication p:last-child {
   margin-bottom: 0;
+}
+
+.project-link {
+  display: inline-flex;
+  margin-top: 22px;
+  color: var(--accent-strong);
+  font-weight: 850;
+}
+
+.video-section {
+  padding-top: 0;
+}
+
+.video-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.video-placeholder {
+  position: relative;
+  display: grid;
+  min-height: 210px;
+  place-items: center;
+  overflow: hidden;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(23, 33, 43, 0.88), rgba(31, 111, 100, 0.72)),
+    url("assets/research-hero.svg") center / cover no-repeat;
+}
+
+.video-placeholder::before {
+  content: "";
+  width: 62px;
+  height: 62px;
+  border: 2px solid rgba(255, 255, 255, 0.82);
+  border-radius: 50%;
+  background:
+    linear-gradient(90deg, transparent 0 38%, rgba(255, 255, 255, 0.9) 39% 63%, transparent 64%) center / 24px 24px no-repeat;
+}
+
+.video-placeholder span {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+  font-size: 0.82rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.video-copy {
+  padding: 22px;
+}
+
+.video-note {
+  margin: 20px 0 0;
+  color: var(--muted);
 }
 
 .publication-list {
@@ -379,7 +471,9 @@ h3 {
   .split-section,
   .contact-section,
   .direction-grid,
-  .project-grid {
+  .project-grid,
+  .featured-project,
+  .video-grid {
     grid-template-columns: 1fr;
   }
 

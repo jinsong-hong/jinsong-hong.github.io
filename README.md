@@ -31,6 +31,8 @@ GitHub Pages normally serves the site automatically for a repository named
 
 - Update the Google Scholar link if the public profile URL changes.
 - Add accepted papers, preprints, project pages, and videos in `index.html`.
+- To embed videos, place public MP4 files under `assets/videos/` or replace
+  the video placeholders with YouTube/Vimeo embed links.
 - Add a `cv.pdf` file and link it from the Contact section if you want to share a CV.
 - Replace `assets/research-hero.svg` with a real lab or robot image when one is ready.
 
