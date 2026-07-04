@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal academic website for Jinsong Hong, a robotics researcher working on legged robotics, sim-to-real reinforcement learning, observer-based control, and robust locomotion.">
+  <title>Jinsong Hong | Robotics Researcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Jinsong Hong home">Jinsong Hong</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Graduate Researcher, Motion Control Lab, DGIST</p>
+        <h1 id="hero-title">Jinsong Hong</h1>
+        <p class="hero-copy">
+          I study legged robotics at the intersection of dynamics-based low-level
+          control, observer-based force and torque estimation, and sim-to-real
+          reinforcement learning.
+        </p>
+        <div class="hero-actions" aria-label="Profile links">
+          <a class="primary-link" href="#research">Research Focus</a>
+          <a class="secondary-link" href="mailto:hn05198@dgist.ac.kr">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section profile-strip" aria-label="Profile summary">
+      <div>
+        <span class="strip-label">Affiliation</span>
+        <strong>DGIST Motion Control Lab</strong>
+      </div>
+      <div>
+        <span class="strip-label">Focus</span>
+        <strong>Legged locomotion and sim-to-real control</strong>
+      </div>
+      <div>
+        <span class="strip-label">GitHub</span>
+        <a href="https://github.com/jinsong-hong">github.com/jinsong-hong</a>
+      </div>
+    </section>
+
+    <section class="section intro-grid" id="research" aria-labelledby="research-title">
+      <div>
+        <p class="section-kicker">Research Focus</p>
+        <h2 id="research-title">Robust locomotion through control-aware learning.</h2>
+      </div>
+      <div class="intro-text">
+        <p>
+          My research interest is to make legged robots more robust in real
+          contact-rich environments. I am especially interested in controllers
+          that combine physical structure with learning, rather than treating
+          reinforcement learning and classical control as separate tools.
+        </p>
+        <ul class="topic-list">
+          <li>Sim-to-real reinforcement learning for legged robots</li>
+          <li>Dynamics-based low-level control and actuator-aware interfaces</li>
+          <li>Disturbance observer and force observer based control</li>
+          <li>Admittance and impedance control for physical interaction</li>
+          <li>Robustness evaluation under delay, contact, and external disturbance</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="directions-title">
+      <div class="section-heading">
+        <p class="section-kicker">Research Directions</p>
+        <h2 id="directions-title">What I am building toward</h2>
+      </div>
+      <div class="direction-grid">
+        <article class="direction">
+          <span class="direction-index">01</span>
+          <h3>Observer-Augmented Locomotion</h3>
+          <p>
+            Using DOB/FOB estimates to expose unmodeled dynamics and contact
+            disturbance to low-level controllers and learned policies.
+          </p>
+        </article>
+        <article class="direction">
+          <span class="direction-index">02</span>
+          <h3>Control-Aware Sim-to-Real RL</h3>
+          <p>
+            Studying how action space, actuator model, delay, domain
+            randomization, and safety layers affect hardware transfer.
+          </p>
+        </article>
+        <article class="direction">
+          <span class="direction-index">03</span>
+          <h3>Compliant Physical Interaction</h3>
+          <p>
+            Comparing position-target policies, torque-level policies, impedance
+            control, and admittance control under matched disturbance tests.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="section-kicker">Selected Work</p>
+        <h2 id="projects-title">Projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="project-label">Sim-to-Real</p>
+          <h3>Parallel-Link Legged Robot Control</h3>
+          <p>
+            Developing and validating a control pipeline for a parallel-link
+            legged robot, with emphasis on transfer gap, actuator dynamics, and
+            hardware disturbance response.
+          </p>
+        </article>
+        <article class="project-card">
+          <p class="project-label">Low-Level Control</p>
+          <h3>DOB/FOB-Based Robustness Layer</h3>
+          <p>
+            Exploring how disturbance and force estimates can be used as a
+            structured interface between model-based control and learned
+            locomotion policies.
+          </p>
+        </article>
+        <article class="project-card">
+          <p class="project-label">Legged RL</p>
+          <h3>Torque Action vs. Position Target Policy</h3>
+          <p>
+            Designing experiments to compare compliance, bandwidth, safety, and
+            recovery behavior across common action-space choices in legged RL.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="publications" aria-labelledby="publications-title">
+      <div>
+        <p class="section-kicker">Publications</p>
+        <h2 id="publications-title">Papers and manuscripts</h2>
+      </div>
+      <div class="publication-list">
+        <article class="publication">
+          <p class="pub-year">In preparation</p>
+          <div>
+            <h3>Observer-Based Robust Low-Level Control for Legged Sim-to-Real Transfer</h3>
+            <p>Jinsong Hong and collaborators</p>
+            <p class="pub-venue">Manuscript in progress</p>
+          </div>
+        </article>
+        <article class="publication">
+          <p class="pub-year">In progress</p>
+          <div>
+            <h3>Disturbance-Robust Policy Interface for Contact-Rich Locomotion</h3>
+            <p>Jinsong Hong and collaborators</p>
+            <p class="pub-venue">Research project</p>
+          </div>
+        </article>
+      </div>
+      <p class="publication-note">
+        Accepted papers, preprints, videos, and code links can be added here as
+        they become public.
+      </p>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="section-kicker">Contact</p>
+        <h2 id="contact-title">Get in touch</h2>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:hn05198@dgist.ac.kr">hn05198@dgist.ac.kr</a>
+        <a href="https://github.com/jinsong-hong">GitHub</a>
+        <a href="https://scholar.google.com/">Google Scholar</a>
+        <a href="https://mcl.dgist.ac.kr/">Motion Control Lab</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Jinsong Hong. Built with GitHub Pages.</p>
+  </footer>
+</body>
+</html>
