@@ -102,28 +102,45 @@
           </div>
           <a class="project-link" href="assets/projects/parallel-link-quadruped-design/leg-mechanism-figure.pdf">Leg figure PDF</a>
         </div>
-        <div class="design-gallery" aria-label="Parallel-link quadruped robot design images">
-          <figure class="design-figure design-figure-wide">
-            <img src="assets/projects/parallel-link-quadruped-design/assembled-parts.png" alt="Manufactured parts for a parallel-link quadruped robot arranged on a table" loading="lazy">
-            <figcaption>Manufactured robot components prepared for assembly.</figcaption>
+        <div class="design-story" aria-label="Parallel-link quadruped robot design workflow">
+          <figure class="design-figure story-step">
+            <span class="story-index">01</span>
+            <p class="story-label">Analysis</p>
+            <img src="assets/projects/parallel-link-quadruped-design/leg-link-fea.png" alt="Finite element analysis of a long leg link component under a 400 N load" loading="lazy">
+            <figcaption>Structural analysis of the leg link under a representative 400 N load case.</figcaption>
           </figure>
-          <figure class="design-figure design-figure-wide">
+          <figure class="design-figure story-step">
+            <span class="story-index">02</span>
+            <p class="story-label">Mechanism Drawing</p>
             <img src="assets/projects/parallel-link-quadruped-design/leg-mechanism-diagram.png" alt="Parallel-link leg mechanism diagram showing hip joint, knee joint, knee crank link, bearing, thigh, shank, and joint coordinates" loading="lazy">
             <figcaption>Leg mechanism diagram with hip/knee modules, bearing interface, crank link, thigh, shank, and joint coordinates.</figcaption>
           </figure>
-          <figure class="design-figure">
-            <img src="assets/projects/parallel-link-quadruped-design/motor-housing-fea.png" alt="Finite element analysis of a motor housing component under a 400 N load" loading="lazy">
-            <figcaption>Motor-side housing FEA under a representative 400 N load case.</figcaption>
+          <figure class="design-figure story-step">
+            <span class="story-index">03</span>
+            <p class="story-label">Fabricated Parts</p>
+            <img src="assets/projects/parallel-link-quadruped-design/assembled-parts.png" alt="Manufactured parts for a parallel-link quadruped robot arranged on a table" loading="lazy">
+            <figcaption>Manufactured robot components prepared for assembly.</figcaption>
           </figure>
-          <figure class="design-figure">
-            <img src="assets/projects/parallel-link-quadruped-design/link-ring-fea.png" alt="Finite element analysis of a ring-shaped parallel-link robot component under a 400 N load" loading="lazy">
-            <figcaption>Ring-shaped load-bearing component with fixed boundary conditions.</figcaption>
-          </figure>
-          <figure class="design-figure">
-            <img src="assets/projects/parallel-link-quadruped-design/leg-link-fea.png" alt="Finite element analysis of a long leg link component under a 400 N load" loading="lazy">
-            <figcaption>Leg link stress distribution for structural safety inspection.</figcaption>
+          <figure class="design-figure story-step">
+            <span class="story-index">04</span>
+            <p class="story-label">Assembly</p>
+            <img src="assets/projects/parallel-link-quadruped-design/assembled-render.png" alt="Assembled parallel-link quadruped robot with red links and black body structure" loading="lazy">
+            <figcaption>Assembled robot layout connecting the actuator modules, body frame, and parallel-link legs.</figcaption>
           </figure>
         </div>
+        <details class="analysis-details">
+          <summary>Additional FEA Results</summary>
+          <div class="design-gallery" aria-label="Additional finite element analysis images">
+            <figure class="design-figure">
+              <img src="assets/projects/parallel-link-quadruped-design/motor-housing-fea.png" alt="Finite element analysis of a motor housing component under a 400 N load" loading="lazy">
+              <figcaption>Motor-side housing FEA under a representative 400 N load case.</figcaption>
+            </figure>
+            <figure class="design-figure">
+              <img src="assets/projects/parallel-link-quadruped-design/link-ring-fea.png" alt="Finite element analysis of a ring-shaped parallel-link robot component under a 400 N load" loading="lazy">
+              <figcaption>Ring-shaped load-bearing component with fixed boundary conditions.</figcaption>
+            </figure>
+          </div>
+        </details>
       </div>
     </section>
 
