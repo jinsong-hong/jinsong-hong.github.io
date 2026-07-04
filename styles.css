@@ -419,7 +419,7 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.design-figure:first-child {
+.design-figure-wide {
   grid-column: 1 / -1;
 }
 
@@ -427,7 +427,7 @@ h3 {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9.7;
-  object-fit: cover;
+  object-fit: contain;
   background: #ffffff;
 }
 
@@ -594,7 +594,7 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .design-figure:first-child {
+  .design-figure-wide {
     grid-column: auto;
   }
 

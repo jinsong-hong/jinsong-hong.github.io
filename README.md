@@ -34,6 +34,7 @@ GitHub Pages normally serves the site automatically for a repository named
 - To embed videos, place public MP4 files under `assets/videos/` or replace
   the video placeholders with YouTube/Vimeo embed links.
 - Project images are stored under `assets/projects/`.
+- Source PDFs for project figures can be stored next to the rendered images.
 - Add a `cv.pdf` file and link it from the Contact section if you want to share a CV.
 - Replace `assets/research-hero.svg` with a real lab or robot image when one is ready.
 
