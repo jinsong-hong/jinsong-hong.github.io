@@ -515,6 +515,14 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.project-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0b1116;
+  object-fit: contain;
+}
+
 .video-placeholder {
   position: relative;
   display: grid;
