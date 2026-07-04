@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project portfolio for Jinsong Hong, including legged robot sim-to-real control, observer-based control, and parallel-link quadruped robot mechanism design.">
+  <title>Projects | Jinsong Hong</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#top" aria-label="Jinsong Hong home">Jinsong Hong</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html#research">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="#videos">Videos</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Project Portfolio</p>
+        <h1 id="page-title">Projects</h1>
+        <p class="hero-copy">
+          Detailed project notes, design figures, analysis results, and media
+          for my legged robotics research.
+        </p>
+      </div>
+    </section>
+
+    <section class="section project-tabs" aria-label="Project navigation">
+      <a href="#observer-aware-locomotion">Sim-to-Real</a>
+      <a href="#parallel-link-design">Mechanism Design</a>
+      <a href="#parallel-link-control">Hardware Control</a>
+      <a href="#observer-control">Observer Control</a>
+      <a href="#videos">Videos</a>
+    </section>
+
+    <section class="section project-detail" id="observer-aware-locomotion" aria-labelledby="observer-aware-title">
+      <div class="featured-project">
+        <div>
+          <p class="project-label">Main Project</p>
+          <h2 id="observer-aware-title">Observer-Aware Sim-to-Real Locomotion</h2>
+          <p>
+            My current work focuses on how dynamics-based low-level control can
+            be combined with learned locomotion policies. The goal is to improve
+            robustness under actuator mismatch, contact uncertainty, delay, and
+            external disturbance without relying only on reward tuning.
+          </p>
+          <div class="tag-list" aria-label="Observer-aware locomotion keywords">
+            <span>Sim-to-Real</span>
+            <span>Legged RL</span>
+            <span>Low-Level Control</span>
+            <span>Robustness</span>
+          </div>
+        </div>
+        <ul class="project-points" aria-label="Main project components">
+          <li>Disturbance and force observer based feedback signals</li>
+          <li>Admittance/impedance interfaces for contact-rich walking</li>
+          <li>Policy action-space comparison: torque vs. position target</li>
+          <li>Hardware validation with matched disturbance tests</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section project-detail" id="parallel-link-design" aria-labelledby="parallel-link-design-title">
+      <div class="design-showcase">
+        <div class="design-copy">
+          <p class="project-label">Design Project</p>
+          <h2 id="parallel-link-design-title">Parallel-Link Quadruped Robot Design</h2>
+          <p>
+            This project studies the mechanical structure of a parallel-link
+            quadruped robot platform. The design emphasizes compact actuation,
+            load-bearing leg geometry, manufacturable components, and structural
+            safety under representative load cases.
+          </p>
+          <div class="tag-list tag-list-spaced" aria-label="Parallel-link quadruped design keywords">
+            <span>Mechanism Design</span>
+            <span>Design Analysis</span>
+            <span>Structural Analysis</span>
+            <span>FEA</span>
+            <span>CAD</span>
+            <span>Quadruped Robot</span>
+          </div>
+          <div class="project-meta" aria-label="Parallel-link quadruped design details">
+            <div>
+              <span>Method</span>
+              <strong>CAD modeling and finite element analysis</strong>
+            </div>
+            <div>
+              <span>Load Case</span>
+              <strong>400 N structural load evaluation</strong>
+            </div>
+            <div>
+              <span>Components</span>
+              <strong>Motor housing, ring structure, and leg link</strong>
+            </div>
+          </div>
+          <a class="project-link" href="assets/projects/parallel-link-quadruped-design/leg-mechanism-figure.pdf">Leg figure PDF</a>
+        </div>
+        <div class="design-gallery" aria-label="Parallel-link quadruped robot design images">
+          <figure class="design-figure design-figure-wide">
+            <img src="assets/projects/parallel-link-quadruped-design/assembled-parts.png" alt="Manufactured parts for a parallel-link quadruped robot arranged on a table" loading="lazy">
+            <figcaption>Manufactured robot components prepared for assembly.</figcaption>
+          </figure>
+          <figure class="design-figure design-figure-wide">
+            <img src="assets/projects/parallel-link-quadruped-design/leg-mechanism-diagram.png" alt="Parallel-link leg mechanism diagram showing hip joint, knee joint, knee crank link, bearing, thigh, shank, and joint coordinates" loading="lazy">
+            <figcaption>Leg mechanism diagram with hip/knee modules, bearing interface, crank link, thigh, shank, and joint coordinates.</figcaption>
+          </figure>
+          <figure class="design-figure">
+            <img src="assets/projects/parallel-link-quadruped-design/motor-housing-fea.png" alt="Finite element analysis of a motor housing component under a 400 N load" loading="lazy">
+            <figcaption>Motor-side housing FEA under a representative 400 N load case.</figcaption>
+          </figure>
+          <figure class="design-figure">
+            <img src="assets/projects/parallel-link-quadruped-design/link-ring-fea.png" alt="Finite element analysis of a ring-shaped parallel-link robot component under a 400 N load" loading="lazy">
+            <figcaption>Ring-shaped load-bearing component with fixed boundary conditions.</figcaption>
+          </figure>
+          <figure class="design-figure">
+            <img src="assets/projects/parallel-link-quadruped-design/leg-link-fea.png" alt="Finite element analysis of a long leg link component under a 400 N load" loading="lazy">
+            <figcaption>Leg link stress distribution for structural safety inspection.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-detail-grid" aria-label="Control projects">
+      <article class="project-card project-card-large" id="parallel-link-control">
+        <p class="project-label">Hardware Control</p>
+        <h2>Parallel-Link Legged Robot Control</h2>
+        <p>
+          Developing a control pipeline for a parallel-link legged robot, with
+          emphasis on transfer gap, actuator dynamics, and repeatable hardware
+          evaluation.
+        </p>
+        <div class="tag-list" aria-label="Parallel-link legged robot control keywords">
+          <span>Sim-to-Real</span>
+          <span>Actuator Model</span>
+          <span>Hardware Test</span>
+        </div>
+      </article>
+      <article class="project-card project-card-large" id="observer-control">
+        <p class="project-label">Observer-Based Control</p>
+        <h2>DOB/FOB Robustness Layer</h2>
+        <p>
+          Exploring how disturbance and force estimates can serve as a
+          structured interface between model-based feedback and learned
+          locomotion policies.
+        </p>
+        <div class="tag-list" aria-label="DOB FOB project keywords">
+          <span>DOB</span>
+          <span>FOB</span>
+          <span>Observer</span>
+          <span>Force Control</span>
+        </div>
+      </article>
+      <article class="project-card project-card-large">
+        <p class="project-label">Learning Interface</p>
+        <h2>Action Space and Compliance</h2>
+        <p>
+          Designing experiments to compare compliance, bandwidth, safety, and
+          recovery behavior across common action-space choices in legged RL.
+        </p>
+        <div class="tag-list" aria-label="Action space and compliance keywords">
+          <span>Torque Action</span>
+          <span>Position Target</span>
+          <span>Compliance</span>
+          <span>RL</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="section video-section" id="videos" aria-labelledby="videos-title">
+      <div class="section-heading">
+        <p class="section-kicker">Media</p>
+        <h2 id="videos-title">Project videos</h2>
+      </div>
+      <div class="video-grid">
+        <article class="video-card">
+          <div class="video-placeholder">
+            <span>Hardware experiment</span>
+          </div>
+          <div class="video-copy">
+            <p class="project-label">Locomotion Test</p>
+            <h3>Parallel-Link Robot Walking Experiment</h3>
+            <p>
+              A video slot for real robot walking, recovery, or repeated
+              experiment clips.
+            </p>
+          </div>
+        </article>
+        <article class="video-card">
+          <div class="video-placeholder">
+            <span>Disturbance test</span>
+          </div>
+          <div class="video-copy">
+            <p class="project-label">Robustness</p>
+            <h3>DOB/FOB Disturbance Response</h3>
+            <p>
+              A video slot for external push, terrain change, or actuator
+              mismatch demonstrations.
+            </p>
+          </div>
+        </article>
+        <article class="video-card">
+          <div class="video-placeholder">
+            <span>Simulation rollout</span>
+          </div>
+          <div class="video-copy">
+            <p class="project-label">Sim-to-Real</p>
+            <h3>Policy Rollout Comparison</h3>
+            <p>
+              A video slot for side-by-side policy rollouts, ablation results,
+              or simulation-to-hardware comparison.
+            </p>
+          </div>
+        </article>
+      </div>
+      <p class="video-note">
+        Public MP4 files or YouTube links can be embedded here after the videos
+        are ready to share.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Jinsong Hong. Built with GitHub Pages.</p>
+  </footer>
+</body>
+</html>

@@ -14,6 +14,7 @@ Static personal academic website for GitHub Pages.
 
    ```text
    index.html
+   projects.html
    styles.css
    assets/running-hero.png
    assets/research-hero.svg

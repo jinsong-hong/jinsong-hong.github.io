@@ -90,6 +90,18 @@ a:focus-visible {
     url("assets/running-hero.png") center / cover no-repeat;
 }
 
+.page-hero {
+  position: relative;
+  min-height: 48vh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  color: #ffffff;
+  background:
+    linear-gradient(90deg, rgba(9, 14, 20, 0.88), rgba(9, 14, 20, 0.6) 52%, rgba(9, 14, 20, 0.2)),
+    url("assets/running-hero.png") center / cover no-repeat;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -287,6 +299,60 @@ h3 {
 .section-heading {
   max-width: 760px;
   margin-bottom: 28px;
+}
+
+.section-summary {
+  max-width: 760px;
+  color: var(--muted);
+}
+
+.section-actions {
+  margin-top: 24px;
+}
+
+.dark-link {
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.dark-link:hover,
+.dark-link:focus-visible {
+  color: #ffffff;
+}
+
+.project-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 34px;
+  padding-bottom: 20px;
+}
+
+.project-tabs a {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--accent-strong);
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.project-detail {
+  padding-top: 24px;
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-card-large {
+  min-height: 320px;
 }
 
 .direction-grid,
@@ -574,6 +640,10 @@ h3 {
     background-position: 58% center;
   }
 
+  .page-hero {
+    min-height: 42vh;
+  }
+
   .hero-content {
     margin: 0 20px 42px;
   }
@@ -584,6 +654,7 @@ h3 {
   .contact-section,
   .direction-grid,
   .project-grid,
+  .project-detail-grid,
   .featured-project,
   .design-showcase,
   .video-grid {
