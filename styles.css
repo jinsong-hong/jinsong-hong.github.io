@@ -250,6 +250,40 @@ h3 {
   border-left: 3px solid var(--accent);
 }
 
+.keyword-cloud,
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.keyword-cloud {
+  margin-top: 28px;
+}
+
+.keyword-cloud span,
+.tag-list span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+.tag-list {
+  margin-top: 18px;
+}
+
+.tag-list-spaced {
+  margin-top: 22px;
+}
+
 .section-heading {
   max-width: 760px;
   margin-bottom: 28px;
