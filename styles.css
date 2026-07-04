@@ -86,14 +86,14 @@ a:focus-visible {
   overflow: hidden;
   color: #ffffff;
   background:
-    linear-gradient(90deg, rgba(9, 14, 20, 0.84), rgba(9, 14, 20, 0.46) 48%, rgba(9, 14, 20, 0.14)),
-    url("assets/research-hero.svg") center / cover no-repeat;
+    linear-gradient(90deg, rgba(9, 14, 20, 0.9), rgba(9, 14, 20, 0.62) 48%, rgba(9, 14, 20, 0.18)),
+    url("assets/running-hero.png") center / cover no-repeat;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(9, 14, 20, 0.58), rgba(9, 14, 20, 0.04) 58%);
+  background: linear-gradient(to top, rgba(9, 14, 20, 0.7), rgba(9, 14, 20, 0.08) 58%);
 }
 
 .hero-content {

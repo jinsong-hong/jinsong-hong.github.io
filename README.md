@@ -15,6 +15,7 @@ Static personal academic website for GitHub Pages.
    ```text
    index.html
    styles.css
+   assets/running-hero.png
    assets/research-hero.svg
    ```
 
@@ -36,6 +37,7 @@ GitHub Pages normally serves the site automatically for a repository named
 - Project images are stored under `assets/projects/`.
 - Source PDFs for project figures can be stored next to the rendered images.
 - Add a `cv.pdf` file and link it from the Contact section if you want to share a CV.
-- Replace `assets/research-hero.svg` with a real lab or robot image when one is ready.
+- Replace `assets/running-hero.png` to change the homepage background.
+- `assets/research-hero.svg` is still used by the video placeholder cards.
 
 No build step is required. The site works as plain static HTML/CSS.
