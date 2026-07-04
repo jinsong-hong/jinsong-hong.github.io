@@ -496,6 +496,10 @@ h3 {
   min-height: 100%;
 }
 
+.story-step-wide {
+  grid-column: 1 / -1;
+}
+
 .story-index {
   position: absolute;
   top: 12px;
@@ -732,6 +736,10 @@ h3 {
 
   .design-story {
     grid-template-columns: 1fr;
+  }
+
+  .story-step-wide {
+    grid-column: auto;
   }
 
   .design-figure-wide {
