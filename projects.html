@@ -34,6 +34,7 @@
 
     <section class="section project-tabs" aria-label="Project navigation">
       <a href="#observer-aware-locomotion">Sim-to-Real</a>
+      <a href="#system-identification">System ID</a>
       <a href="#parallel-link-design">Mechanism Design</a>
       <a href="#parallel-link-control">Hardware Control</a>
       <a href="#observer-control">Observer Control</a>
@@ -64,6 +65,82 @@
           <li>Policy action-space comparison: torque vs. position target</li>
           <li>Hardware validation with matched disturbance tests</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="section project-detail" id="system-identification" aria-labelledby="system-identification-title">
+      <div class="section-heading">
+        <p class="section-kicker">Modeling</p>
+        <h2 id="system-identification-title">Frequency-Domain System Identification</h2>
+        <p class="section-summary">
+          System identification for sim-to-real control, including MIMO
+          identification of the leg dynamics and actuator identification of
+          inertia, damping, and system delay.
+        </p>
+      </div>
+      <div class="featured-project">
+        <div>
+          <p class="project-label">Leg Dynamics</p>
+          <h3>MIMO System Identification</h3>
+          <p>
+            Multi Input Multi Output identification is used to estimate the leg
+            dynamics, including the coupled mass matrix structure needed for
+            model-aware low-level control.
+          </p>
+          <div class="tag-list" aria-label="MIMO system identification keywords">
+            <span>Frequency Domain</span>
+            <span>MIMO ID</span>
+            <span>Leg M Matrix</span>
+            <span>Sim-to-Real</span>
+          </div>
+        </div>
+        <ul class="project-points" aria-label="System identification components">
+          <li>Leg mass matrix identification from multi-input excitation</li>
+          <li>Actuator inertia and damping identification</li>
+          <li>System delay estimation for hardware-aware simulation</li>
+          <li>Frequency-domain validation for sim-to-real controller tuning</li>
+        </ul>
+      </div>
+      <div class="video-grid system-id-grid">
+        <article class="video-card">
+          <video class="project-video" controls muted playsinline preload="metadata">
+            <source src="assets/videos/system-id/mimo-id-sum-x10.mp4" type="video/mp4">
+          </video>
+          <div class="video-copy">
+            <p class="project-label">MIMO System Identification</p>
+            <h3>MIMO ID SUM Excitation</h3>
+            <p>
+              Frequency-domain multi-input multi-output identification for the
+              leg dynamics and mass matrix estimation.
+            </p>
+          </div>
+        </article>
+        <article class="video-card">
+          <video class="project-video" controls muted playsinline preload="metadata">
+            <source src="assets/videos/system-id/mimo-id-sub-x10.mp4" type="video/mp4">
+          </video>
+          <div class="video-copy">
+            <p class="project-label">MIMO System Identification</p>
+            <h3>MIMO ID SUB Excitation</h3>
+            <p>
+              Complementary MIMO excitation case for validating coupled leg
+              dynamics in the frequency domain.
+            </p>
+          </div>
+        </article>
+        <article class="video-card">
+          <video class="project-video" controls muted playsinline preload="metadata">
+            <source src="assets/videos/system-id/actuator-id.mp4" type="video/mp4">
+          </video>
+          <div class="video-copy">
+            <p class="project-label">Actuator System Identification</p>
+            <h3>Actuator Inertia, Damping, and Delay</h3>
+            <p>
+              Actuator-level identification of reflected inertia, damping, and
+              system delay for hardware-aware controller design.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
