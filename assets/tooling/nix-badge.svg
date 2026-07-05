@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Nix package manager badge">
+  <rect width="640" height="360" rx="28" fill="#f7fbff"/>
+  <path d="M122 108h90l38 66-38 66h-90l38-66z" fill="#5277c3" opacity=".9"/>
+  <path d="M250 74h90l38 66-38 66h-90l38-66z" fill="#7ebae4" opacity=".9"/>
+  <path d="M378 108h90l38 66-38 66h-90l38-66z" fill="#5277c3" opacity=".9"/>
+  <path d="M250 206h90l38 66-38 66h-90l38-66z" fill="#7ebae4" opacity=".9"/>
+  <text x="320" y="178" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="64" font-weight="800" fill="#17212b">Nix</text>
+  <text x="320" y="232" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#526370">Reproducible robotics environments</text>
+</svg>

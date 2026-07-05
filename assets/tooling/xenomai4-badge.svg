@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Xenomai 4 real-time Linux badge">
+  <rect width="640" height="360" rx="28" fill="#fbfaf7"/>
+  <circle cx="186" cy="178" r="88" fill="#17212b"/>
+  <circle cx="186" cy="178" r="58" fill="#ffffff"/>
+  <path d="M186 178l42-78" stroke="#b5653c" stroke-width="16" stroke-linecap="round"/>
+  <path d="M186 178l72 36" stroke="#1f6f64" stroke-width="14" stroke-linecap="round"/>
+  <g stroke="#17212b" stroke-width="10" stroke-linecap="round">
+    <path d="M186 76v22"/>
+    <path d="M186 258v22"/>
+    <path d="M84 178h22"/>
+    <path d="M266 178h22"/>
+  </g>
+  <text x="410" y="166" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="52" font-weight="850" fill="#17212b">Xenomai 4</text>
+  <text x="410" y="214" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#526370">Real-time control</text>
+</svg>

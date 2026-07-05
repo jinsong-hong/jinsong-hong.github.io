@@ -355,6 +355,94 @@ h3 {
   min-height: 320px;
 }
 
+.stack-section {
+  padding-top: 20px;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.stack-card,
+.tool-logo-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.stack-card {
+  min-height: 310px;
+  padding: 24px;
+}
+
+.visual-stack-card {
+  padding: 0;
+}
+
+.visual-stack-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #111820;
+}
+
+.visual-stack-card > div {
+  padding: 20px 22px 22px;
+}
+
+.tool-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.tool-logo-card {
+  padding: 16px;
+}
+
+.tool-logo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 18px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.capability-grid article {
+  min-height: 112px;
+  padding: 18px;
+  background: var(--panel);
+}
+
+.capability-grid span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.capability-grid strong {
+  display: block;
+  line-height: 1.35;
+}
+
 .direction-grid,
 .video-grid {
   display: grid;
@@ -728,6 +816,9 @@ h3 {
   .direction-grid,
   .project-grid,
   .project-detail-grid,
+  .stack-grid,
+  .tool-logo-grid,
+  .capability-grid,
   .featured-project,
   .design-showcase,
   .video-grid {

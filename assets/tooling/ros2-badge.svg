@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="ROS 2 robotics middleware badge">
+  <rect width="640" height="360" rx="28" fill="#f8f9fb"/>
+  <g fill="#17212b">
+    <circle cx="156" cy="142" r="32"/>
+    <circle cx="244" cy="112" r="24"/>
+    <circle cx="252" cy="216" r="30"/>
+    <circle cx="384" cy="126" r="34"/>
+    <circle cx="466" cy="206" r="28"/>
+  </g>
+  <g stroke="#1f6f64" stroke-width="12" stroke-linecap="round">
+    <path d="M184 134l38-14"/>
+    <path d="M253 141l-1 45"/>
+    <path d="M282 207l76-65"/>
+    <path d="M410 148l38 42"/>
+  </g>
+  <text x="320" y="268" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="62" font-weight="850" fill="#17212b">ROS 2</text>
+  <text x="320" y="306" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#526370">Robotics middleware</text>
+</svg>
