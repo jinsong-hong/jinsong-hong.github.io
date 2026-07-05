@@ -700,6 +700,10 @@ h3 {
   background: #ffffff;
 }
 
+.final-hardware-photo img {
+  aspect-ratio: auto;
+}
+
 .design-figure figcaption {
   padding: 12px 14px 14px;
   color: var(--muted);
