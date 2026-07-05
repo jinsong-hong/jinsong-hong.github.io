@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal academic website for Jinsong Hong, a robotics researcher working on legged robotics, sim-to-real reinforcement learning, observer-based control, and robust locomotion.">
+  <meta name="description" content="Personal academic website for Jinsong Hong, a robotics researcher working on force-aware contact control, legged robotics, sim-to-real learning, and robust locomotion.">
   <title>Jinsong Hong | Robotics Researcher</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -26,9 +26,9 @@
         <p class="eyebrow">Graduate Researcher, DGIST</p>
         <h1 id="hero-title">Jinsong Hong</h1>
         <p class="hero-copy">
-          I study legged robotics at the intersection of dynamics-based low-level
-          control, observer-based force and torque estimation, and sim-to-real
-          reinforcement learning.
+          I study force-aware contact control for legged robots, combining
+          dynamics-based low-level control, observer-based estimation, and
+          sim-to-real learning.
         </p>
         <div class="hero-actions" aria-label="Profile links">
           <a class="primary-link" href="#research">Research Focus</a>
@@ -55,40 +55,35 @@
     <section class="section intro-grid" id="research" aria-labelledby="research-title">
       <div>
         <p class="section-kicker">Research Focus</p>
-        <h2 id="research-title">Robust locomotion through control-aware learning.</h2>
+        <h2 id="research-title">Force-aware contact control for legged robots.</h2>
       </div>
       <div class="intro-text">
         <p>
-          My research interest is to make legged robots more robust in real
-          contact-rich environments. I am especially interested in controllers
-          that combine physical structure with learning, rather than treating
-          reinforcement learning and classical control as separate tools.
+          My research focuses on how legged robots can handle contact through
+          force-aware control and learning. I am especially interested in
+          observer-based contact estimation, admittance/impedance interfaces,
+          and dynamics-based low-level control for robust locomotion.
         </p>
         <ul class="topic-list">
-          <li>Sim-to-real reinforcement learning for legged robots</li>
-          <li>Dynamics-based low-level control and actuator-aware interfaces</li>
-          <li>Disturbance observer and force observer based control</li>
+          <li>Force-aware contact control for legged locomotion</li>
+          <li>Observer-based estimation of contact force and disturbance</li>
           <li>Admittance and impedance control for physical interaction</li>
-          <li>Robustness evaluation under delay, contact, and external disturbance</li>
+          <li>Sim-to-real learning with dynamics-based low-level control</li>
+          <li>Robustness evaluation under contact, delay, and external disturbance</li>
         </ul>
         <div class="keyword-cloud" aria-label="Research keywords">
           <span>Legged Robotics</span>
+          <span>Force Control</span>
+          <span>Contact Dynamics</span>
           <span>Sim-to-Real</span>
-          <span>Low-Level Control</span>
           <span>Reinforcement Learning</span>
           <span>Model Predictive Control</span>
-          <span>DOB</span>
-          <span>FOB</span>
+          <span>Observer</span>
           <span>Admittance Control</span>
+          <span>Impedance Control</span>
           <span>System Identification</span>
-          <span>Isaac Sim</span>
-          <span>MuJoCo</span>
+          <span>Simulation</span>
           <span>Programming</span>
-          <span>ROS 2</span>
-          <span>Xenomai 4</span>
-          <span>EtherCAT</span>
-          <span>Mechanism Design</span>
-          <span>Design Analysis</span>
         </div>
       </div>
     </section>
@@ -99,8 +94,7 @@
         <h2 id="stack-title">Design, identify, simulate, and deploy legged robot systems.</h2>
         <p class="section-summary">
           I work across mechanism design, frequency-domain system identification,
-          learning-based control, simulation, real-time software, communication,
-          GUI tooling, and hardware integration.
+          force-aware control, simulation, programming, and hardware integration.
         </p>
       </div>
       <div class="skill-flow-grid" aria-label="Research capability areas">
@@ -133,87 +127,62 @@
           <div class="tag-list">
             <span>Reinforcement Learning</span>
             <span>Model Predictive Control</span>
+            <span>Observer</span>
             <span>Admittance Control</span>
-            <span>DOB</span>
-            <span>FOB</span>
+            <span>Impedance Control</span>
           </div>
         </article>
         <article>
           <p class="project-label">Programming</p>
-          <h3>Real-Time Robot Software</h3>
+          <h3>Robot Experiment Programming</h3>
           <div class="tag-list">
-            <span>Nix</span>
-            <span>ROS 2</span>
-            <span>Xenomai 4</span>
-            <span>EtherCAT</span>
-            <span>GUI</span>
+            <span>Programming</span>
           </div>
         </article>
       </div>
       <div class="stack-grid">
         <article class="stack-card">
           <p class="project-label">Control and Learning</p>
-          <h3>RL, MPC, and Dynamics-Based Control</h3>
+          <h3>Force-Aware Contact Control</h3>
           <div class="tag-list" aria-label="Control and learning keywords">
-            <span>Reinforcement Learning</span>
             <span>Model Predictive Control</span>
+            <span>Observer</span>
             <span>Admittance Control</span>
-            <span>System ID</span>
-            <span>Sim-to-Real</span>
+            <span>Impedance Control</span>
+            <span>Reinforcement Learning</span>
           </div>
         </article>
         <article class="stack-card visual-stack-card">
-          <img src="assets/tooling/isaac-sim-quadrupeds.png" alt="Isaac Sim quadruped simulation scene with many robots on a grid" loading="lazy">
+          <img src="assets/tooling/mujoco-quadruped.png" alt="Quadruped robot simulation model on a grid floor" loading="lazy">
           <div>
-            <p class="project-label">Simulator</p>
-            <h3>Isaac Sim</h3>
-            <p>Large-scale quadruped simulation and visual validation.</p>
+            <p class="project-label">Simulation</p>
+            <h3>Simulation</h3>
+            <p>Physics simulation for controller validation, system modeling, and sim-to-real workflows.</p>
           </div>
         </article>
-        <article class="stack-card visual-stack-card">
-          <img src="assets/tooling/mujoco-quadruped.png" alt="MuJoCo quadruped simulation model on a grid floor" loading="lazy">
-          <div>
-            <p class="project-label">Simulator</p>
-            <h3>MuJoCo</h3>
-            <p>Fast dynamics simulation for model-based and learning workflows.</p>
+        <article class="stack-card">
+          <p class="project-label">Programming</p>
+          <h3>Programming for Robot Experiments</h3>
+          <div class="tag-list" aria-label="Programming keywords">
+            <span>Programming</span>
+            <span>Experiment Tools</span>
+            <span>Data Logging</span>
+            <span>Controller Validation</span>
           </div>
         </article>
       </div>
-      <div class="tool-logo-grid" aria-label="Programming and real-time system tools">
-        <article class="tool-logo-card">
-          <img src="assets/tooling/nix-badge.svg" alt="Nix package manager badge" loading="lazy">
-          <div class="tag-list">
-            <span>Package Manager</span>
-            <span>Reproducibility</span>
-          </div>
-        </article>
-        <article class="tool-logo-card">
-          <img src="assets/tooling/ros2-badge.svg" alt="ROS 2 robotics middleware badge" loading="lazy">
-          <div class="tag-list">
-            <span>Robot Middleware</span>
-            <span>Distributed Systems</span>
-          </div>
-        </article>
-        <article class="tool-logo-card">
-          <img src="assets/tooling/xenomai4-badge.svg" alt="Xenomai 4 real-time Linux badge" loading="lazy">
-          <div class="tag-list">
-            <span>RTOS</span>
-            <span>Real-Time Control</span>
-          </div>
-        </article>
-      </div>
-      <div class="capability-grid">
+      <div class="capability-grid compact-capability-grid">
         <article>
-          <span>Communication</span>
-          <strong>EtherCAT</strong>
+          <span>Modeling</span>
+          <strong>Frequency-domain system identification</strong>
         </article>
         <article>
-          <span>Concurrency</span>
-          <strong>Multithreading and multiprocessing</strong>
+          <span>Control</span>
+          <strong>Force-aware contact and interaction control</strong>
         </article>
         <article>
-          <span>Interface</span>
-          <strong>Custom GUI design for robot experiments</strong>
+          <span>Simulation</span>
+          <strong>Simulation-based controller validation</strong>
         </article>
         <article>
           <span>Integration</span>
@@ -230,10 +199,10 @@
       <div class="direction-grid">
         <article class="direction">
           <span class="direction-index">01</span>
-          <h3>Observer-Augmented Locomotion</h3>
+          <h3>Observer-Based Contact Estimation</h3>
           <p>
-            Using DOB/FOB estimates to expose unmodeled dynamics and contact
-            disturbance to low-level controllers and learned policies.
+            Using observer-based estimates to expose contact force, disturbance,
+            and unmodeled dynamics to low-level controllers and learned policies.
           </p>
         </article>
         <article class="direction">
@@ -324,17 +293,16 @@
         </article>
         <article class="project-card">
           <p class="project-label">Observer-Based Control</p>
-          <h3>DOB/FOB Robustness Layer</h3>
+          <h3>Observer-Based Contact Robustness Layer</h3>
           <p>
-            Exploring how disturbance and force estimates can serve as a
+            Exploring how observer-based force and disturbance estimates can serve as a
             structured interface between model-based feedback and learned
             locomotion policies.
           </p>
-          <div class="tag-list" aria-label="DOB FOB project keywords">
-            <span>DOB</span>
-            <span>FOB</span>
+          <div class="tag-list" aria-label="Observer-based control project keywords">
             <span>Observer</span>
             <span>Force Control</span>
+            <span>Contact Control</span>
           </div>
           <a class="project-link" href="projects.html#observer-control">Manuscript direction</a>
         </article>
