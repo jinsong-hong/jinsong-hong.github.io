@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Robot programming dashboard illustration</title>
+  <desc id="desc">Abstract software dashboard with terminal rows, plots, and control panels.</desc>
+  <rect width="1200" height="675" fill="#111820"/>
+  <rect x="70" y="70" width="1060" height="535" rx="20" fill="#f7f8f5"/>
+  <rect x="110" y="118" width="420" height="185" rx="14" fill="#17212b"/>
+  <rect x="140" y="154" width="220" height="14" rx="7" fill="#48a89c"/>
+  <rect x="140" y="190" width="310" height="12" rx="6" fill="#d9ded9"/>
+  <rect x="140" y="224" width="260" height="12" rx="6" fill="#d9ded9"/>
+  <rect x="140" y="258" width="345" height="12" rx="6" fill="#d9ded9"/>
+  <rect x="575" y="118" width="515" height="185" rx="14" fill="#ffffff" stroke="#d9ded9" stroke-width="3"/>
+  <path d="M620 252 C665 192 710 226 755 178 C806 124 858 210 907 168 C962 121 1000 164 1045 137" fill="none" stroke="#1f6f64" stroke-width="12" stroke-linecap="round"/>
+  <path d="M620 255 L1045 255" stroke="#d9ded9" stroke-width="4" stroke-linecap="round"/>
+  <rect x="110" y="346" width="300" height="190" rx="14" fill="#ffffff" stroke="#d9ded9" stroke-width="3"/>
+  <circle cx="160" cy="400" r="22" fill="#1f6f64"/>
+  <circle cx="225" cy="400" r="22" fill="#b5653c"/>
+  <circle cx="290" cy="400" r="22" fill="#17212b"/>
+  <rect x="142" y="455" width="220" height="12" rx="6" fill="#d9ded9"/>
+  <rect x="142" y="488" width="170" height="12" rx="6" fill="#d9ded9"/>
+  <rect x="455" y="346" width="300" height="190" rx="14" fill="#ffffff" stroke="#d9ded9" stroke-width="3"/>
+  <rect x="500" y="393" width="210" height="20" rx="10" fill="#1f6f64"/>
+  <rect x="500" y="439" width="155" height="20" rx="10" fill="#b5653c"/>
+  <rect x="500" y="485" width="235" height="20" rx="10" fill="#17212b"/>
+  <rect x="800" y="346" width="290" height="190" rx="14" fill="#17212b"/>
+  <path d="M845 486 L895 436 L845 386" fill="none" stroke="#f7f8f5" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1035 486 L985 436 L1035 386" fill="none" stroke="#48a89c" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -233,78 +233,72 @@
           analysis, and media are collected on the project page.
         </p>
       </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-label">Main Project</p>
-          <h3>Sim-to-Real for Hardware Consistent Learning</h3>
-          <p>
-            Combining dynamics-based low-level control with learned locomotion
-            policies for robust hardware transfer.
-          </p>
-          <div class="tag-list" aria-label="Observer-aware sim-to-real keywords">
-            <span>Sim-to-Real</span>
-            <span>Legged RL</span>
-            <span>Robustness</span>
+      <div class="project-overview-list">
+        <article class="project-overview-item">
+          <div class="project-overview-title">
+            <p class="project-label">Design</p>
+            <h3><a href="projects.html#parallel-link-design">Parallel-Link Quadruped Robot Design</a></h3>
           </div>
-          <a class="project-link" href="projects.html#observer-aware-locomotion">Details</a>
+          <a class="project-overview-media" href="projects.html#parallel-link-design" aria-label="Open design project">
+            <img src="assets/projects/parallel-link-quadruped-design/final-hardware-picture.jpg" alt="Final assembled parallel-link quadruped robot hardware" loading="lazy">
+          </a>
+          <div class="project-overview-copy">
+            <p>
+              Mechanical design, fabrication, and assembly of a parallel-link
+              quadruped platform with FEA-based structural checks.
+            </p>
+            <a class="project-link" href="projects.html#parallel-link-design">Open full project</a>
+          </div>
         </article>
-        <article class="project-card">
-          <p class="project-label">Mechanical Design</p>
-          <h3>Parallel-Link Quadruped Robot Design</h3>
-          <p>
-            Designing structural components for a parallel-link quadruped robot,
-            including actuator housings, link structures, and load-bearing
-            interfaces verified through finite element analysis.
-          </p>
-          <div class="tag-list" aria-label="Parallel-link quadruped design keywords">
-            <span>Mechanism Design</span>
-            <span>Design Analysis</span>
-            <span>FEA</span>
-            <span>CAD</span>
+        <article class="project-overview-item">
+          <div class="project-overview-title">
+            <p class="project-label">Learning</p>
+            <h3><a href="projects.html#observer-aware-locomotion">Sim-to-Real for Hardware Consistent Learning</a></h3>
           </div>
-          <a class="project-link" href="projects.html#parallel-link-design">Design gallery</a>
+          <a class="project-overview-media" href="projects.html#observer-aware-locomotion" aria-label="Open learning project">
+            <img src="assets/tooling/mujoco-quadruped.png" alt="Quadruped robot simulation model on a grid floor" loading="lazy">
+          </a>
+          <div class="project-overview-copy">
+            <p>
+              Learning-oriented sim-to-real pipeline built around hardware
+              consistency, actuator-aware low-level control, and repeatable validation.
+            </p>
+            <a class="project-link" href="projects.html#observer-aware-locomotion">Open full project</a>
+          </div>
         </article>
-        <article class="project-card">
-          <p class="project-label">Modeling</p>
-          <h3>Frequency-Domain System Identification</h3>
-          <p>
-            Identifying leg dynamics, actuator inertia, damping, and system
-            delay for model-aware sim-to-real control.
-          </p>
-          <div class="tag-list" aria-label="System identification keywords">
-            <span>System ID</span>
-            <span>Frequency Domain</span>
-            <span>MIMO</span>
+        <article class="project-overview-item">
+          <div class="project-overview-title">
+            <p class="project-label">Control</p>
+            <h3><a href="projects.html#parallel-link-control">Force-Aware Locomotion Control</a></h3>
           </div>
-          <a class="project-link" href="projects.html#system-identification">ID videos</a>
+          <div class="project-overview-media">
+            <video class="project-video" controls muted playsinline preload="metadata" poster="assets/running-hero.png">
+              <source src="assets/videos/running.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-overview-copy">
+            <p>
+              Hardware running experiments for low-level control, contact
+              robustness, and force-aware locomotion validation.
+            </p>
+            <a class="project-link" href="projects.html#parallel-link-control">Open full project</a>
+          </div>
         </article>
-        <article class="project-card">
-          <p class="project-label">Hardware Control</p>
-          <h3>Parallel-Link Legged Robot Control</h3>
-          <p>
-            Developing a control pipeline for a parallel-link legged robot with
-            actuator-aware validation.
-          </p>
-          <div class="tag-list" aria-label="Parallel-link legged robot control keywords">
-            <span>Actuator Model</span>
-            <span>Hardware Test</span>
+        <article class="project-overview-item">
+          <div class="project-overview-title">
+            <p class="project-label">Programming</p>
+            <h3><a href="projects.html#programming">Programming for Robot Experiments</a></h3>
           </div>
-          <a class="project-link" href="projects.html#parallel-link-control">Experiment media</a>
-        </article>
-        <article class="project-card">
-          <p class="project-label">Observer-Based Control</p>
-          <h3>Observer-Based Contact Robustness Layer</h3>
-          <p>
-            Exploring how observer-based force and disturbance estimates can serve as a
-            structured interface between model-based feedback and learned
-            locomotion policies.
-          </p>
-          <div class="tag-list" aria-label="Observer-based control project keywords">
-            <span>Observer</span>
-            <span>Force Control</span>
-            <span>Contact Control</span>
+          <a class="project-overview-media" href="projects.html#programming" aria-label="Open programming project">
+            <img src="assets/tooling/programming-panel.svg" alt="Abstract robot programming dashboard" loading="lazy">
+          </a>
+          <div class="project-overview-copy">
+            <p>
+              Experiment software for controller validation, data logging,
+              simulation workflows, and hardware-in-the-loop robot testing.
+            </p>
+            <a class="project-link" href="projects.html#programming">Open full project</a>
           </div>
-          <a class="project-link" href="projects.html#observer-control">Manuscript direction</a>
         </article>
       </div>
       <div class="section-actions">

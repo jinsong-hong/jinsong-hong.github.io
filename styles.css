@@ -472,6 +472,66 @@ h3 {
   gap: 18px;
 }
 
+.project-overview-list {
+  display: grid;
+  gap: 24px;
+}
+
+.project-overview-item {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.62fr) minmax(280px, 0.92fr) minmax(280px, 1fr);
+  gap: 26px;
+  align-items: center;
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+}
+
+.project-overview-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.project-overview-title h3 {
+  margin-bottom: 0;
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  line-height: 1.08;
+}
+
+.project-overview-title a:hover,
+.project-overview-title a:focus-visible {
+  color: var(--accent-strong);
+}
+
+.project-overview-media {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.project-overview-media img,
+.project-overview-media .project-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.project-overview-media .project-video {
+  background: #0b1116;
+  object-fit: contain;
+}
+
+.project-overview-copy {
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.project-overview-copy .project-link {
+  margin-top: 12px;
+}
+
 .system-id-grid {
   margin-top: 18px;
 }
@@ -888,6 +948,7 @@ h3 {
   .contact-section,
   .direction-grid,
   .project-grid,
+  .project-overview-item,
   .project-detail-grid,
   .skill-flow-grid,
   .stack-grid,
