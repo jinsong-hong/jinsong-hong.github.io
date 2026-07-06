@@ -248,6 +248,19 @@ h3 {
   font-size: 1.04rem;
 }
 
+.research-focus {
+  display: block;
+}
+
+.research-focus h2 {
+  max-width: none;
+  white-space: nowrap;
+}
+
+.research-focus .intro-text {
+  max-width: 760px;
+}
+
 .topic-list {
   display: grid;
   gap: 10px;
@@ -308,18 +321,63 @@ h3 {
 
 .skill-flow-grid {
   display: grid;
-  grid-template-columns: minmax(0, 560px);
-  gap: 18px;
+  grid-template-columns: 1fr;
+  gap: 22px;
   margin-bottom: 0;
 }
 
 .skill-flow-grid article {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.78fr) minmax(340px, 1.22fr);
+  gap: clamp(22px, 4vw, 48px);
+  align-items: center;
   min-height: auto;
   padding: 30px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
   box-shadow: var(--shadow);
+}
+
+.skill-card-media img,
+.skill-card-media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #0b1116;
+}
+
+.skill-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.skill-media-grid figure {
+  margin: 0;
+}
+
+.skill-media-grid figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.programming-badge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.programming-badge-grid img {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  padding: 16px;
+  background: #ffffff;
 }
 
 .section-actions {
@@ -951,6 +1009,7 @@ h3 {
   .project-overview-item,
   .project-detail-grid,
   .skill-flow-grid,
+  .skill-flow-grid article,
   .stack-grid,
   .tool-logo-grid,
   .capability-grid,
@@ -975,6 +1034,15 @@ h3 {
 
   .design-figure-wide {
     grid-column: auto;
+  }
+
+  .research-focus h2 {
+    white-space: normal;
+  }
+
+  .skill-media-grid,
+  .programming-badge-grid {
+    grid-template-columns: 1fr;
   }
 
   .profile-strip {

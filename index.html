@@ -51,7 +51,7 @@
       </div>
     </section>
 
-    <section class="section intro-grid" id="research" aria-labelledby="research-title">
+    <section class="section intro-grid research-focus" id="research" aria-labelledby="research-title">
       <div>
         <p class="section-kicker">Research Focus</p>
         <h2 id="research-title">Dynamics &amp; control aware learning</h2>
@@ -66,48 +66,83 @@
 
     <section class="section stack-section" id="stack" aria-label="Capabilities">
       <div class="skill-flow-grid" aria-label="Research capability areas">
-        <article>
-          <p class="project-label">Design</p>
-          <h3>Mechanism Design and Analysis</h3>
-          <div class="tag-list">
-            <span>Mechanism Design</span>
-            <span>Design Analysis</span>
-            <span>FEA</span>
-            <span>CAD</span>
-            <span>Fabrication</span>
-            <span>Assembly</span>
+        <article class="skill-card">
+          <div class="skill-card-copy">
+            <p class="project-label">Design</p>
+            <h3>Mechanism Design and Analysis</h3>
+            <div class="tag-list">
+              <span>Mechanism Design</span>
+              <span>Design Analysis</span>
+              <span>FEA</span>
+              <span>CAD</span>
+              <span>Fabrication</span>
+              <span>Assembly</span>
+            </div>
+          </div>
+          <div class="skill-card-media">
+            <img src="assets/projects/parallel-link-quadruped-design/capability-hardware.png" alt="Assembled parallel-link quadruped robot hardware" loading="lazy">
           </div>
         </article>
-        <article>
-          <p class="project-label">System ID</p>
-          <h3>Frequency-Domain Robot Modeling</h3>
-          <div class="tag-list">
-            <span>MIMO ID</span>
-            <span>Actuator ID</span>
-            <span>Leg M Matrix</span>
-            <span>Delay</span>
-            <span>Damping</span>
+        <article class="skill-card">
+          <div class="skill-card-copy">
+            <p class="project-label">System ID</p>
+            <h3>Frequency-Domain Robot Modeling</h3>
+            <div class="tag-list">
+              <span>MIMO ID</span>
+              <span>Actuator ID</span>
+              <span>Leg M Matrix</span>
+              <span>Delay</span>
+              <span>Damping</span>
+            </div>
+          </div>
+          <div class="skill-card-media skill-media-grid">
+            <figure>
+              <video controls muted playsinline preload="metadata">
+                <source src="assets/videos/system-id/actuator-id.mp4" type="video/mp4">
+              </video>
+              <figcaption>Actuator ID</figcaption>
+            </figure>
+            <figure>
+              <video controls muted playsinline preload="metadata">
+                <source src="assets/videos/system-id/mimo-id-sum-x10.mp4" type="video/mp4">
+              </video>
+              <figcaption>Leg MIMO ID</figcaption>
+            </figure>
           </div>
         </article>
-        <article>
-          <p class="project-label">Control</p>
-          <h3>Dynamics-Based Learning Control</h3>
-          <div class="tag-list">
-            <span>Reinforcement Learning</span>
-            <span>Model Predictive Control</span>
-            <span>Observer</span>
-            <span>Admittance Control</span>
-            <span>Impedance Control</span>
+        <article class="skill-card">
+          <div class="skill-card-copy">
+            <p class="project-label">Control</p>
+            <h3>Dynamics-Based Learning Control</h3>
+            <div class="tag-list">
+              <span>Reinforcement Learning</span>
+              <span>Model Predictive Control</span>
+              <span>Observer</span>
+              <span>Admittance Control</span>
+              <span>Impedance Control</span>
+            </div>
+          </div>
+          <div class="skill-card-media">
+            <video controls muted playsinline preload="metadata" poster="assets/running-hero.png">
+              <source src="assets/videos/running.mp4" type="video/mp4">
+            </video>
           </div>
         </article>
-        <article>
-          <p class="project-label">Programming</p>
-          <h3>Robot Experiment Programming</h3>
-          <div class="tag-list">
-            <span>Programming</span>
-            <span>Experiment Tools</span>
-            <span>Data Logging</span>
-            <span>Controller Validation</span>
+        <article class="skill-card">
+          <div class="skill-card-copy">
+            <p class="project-label">Programming</p>
+            <h3>Robot Experiment Programming</h3>
+            <div class="tag-list">
+              <span>Programming</span>
+              <span>Experiment Tools</span>
+              <span>Data Logging</span>
+              <span>Controller Validation</span>
+            </div>
+          </div>
+          <div class="skill-card-media programming-badge-grid" aria-label="Programming tools">
+            <img src="assets/tooling/nix-badge.svg" alt="Nix">
+            <img src="assets/tooling/ros2-badge.svg" alt="ROS 2">
+            <img src="assets/tooling/xenomai4-badge.svg" alt="Xenomai 4">
           </div>
         </article>
       </div>
