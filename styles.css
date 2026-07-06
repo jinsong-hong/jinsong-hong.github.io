@@ -308,14 +308,14 @@ h3 {
 
 .skill-flow-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-bottom: 18px;
+  grid-template-columns: minmax(0, 560px);
+  gap: 18px;
+  margin-bottom: 0;
 }
 
 .skill-flow-grid article {
-  min-height: 250px;
-  padding: 22px;
+  min-height: auto;
+  padding: 30px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
