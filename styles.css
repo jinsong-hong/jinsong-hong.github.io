@@ -373,11 +373,47 @@ h3 {
   gap: 12px;
 }
 
-.programming-badge-grid img {
-  aspect-ratio: 16 / 10;
-  object-fit: contain;
+.logo-badge {
+  display: grid;
+  grid-template-rows: 76px auto auto;
+  gap: 8px;
+  min-height: 168px;
   padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
   background: #ffffff;
+  box-shadow: 0 12px 28px rgba(20, 27, 34, 0.08);
+}
+
+.logo-badge-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 76px;
+}
+
+.programming-badge-grid .logo-badge img {
+  display: block;
+  width: 100%;
+  max-height: 68px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.logo-badge strong {
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.15;
+}
+
+.logo-badge span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
 }
 
 .section-actions {
