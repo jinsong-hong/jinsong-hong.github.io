@@ -86,8 +86,8 @@ a:focus-visible {
   overflow: hidden;
   color: #ffffff;
   background:
-    linear-gradient(90deg, rgba(9, 14, 20, 0.9), rgba(9, 14, 20, 0.62) 48%, rgba(9, 14, 20, 0.18)),
-    url("assets/running-hero.png") center / cover no-repeat;
+    linear-gradient(90deg, rgba(9, 14, 20, 0.52), rgba(9, 14, 20, 0.18) 54%, rgba(9, 14, 20, 0.08)),
+    url("assets/hero-hardware-background.jpg") center / cover no-repeat;
 }
 
 .page-hero {
@@ -98,8 +98,8 @@ a:focus-visible {
   overflow: hidden;
   color: #ffffff;
   background:
-    linear-gradient(90deg, rgba(9, 14, 20, 0.88), rgba(9, 14, 20, 0.6) 52%, rgba(9, 14, 20, 0.2)),
-    url("assets/running-hero.png") center / cover no-repeat;
+    linear-gradient(90deg, rgba(9, 14, 20, 0.64), rgba(9, 14, 20, 0.28) 54%, rgba(9, 14, 20, 0.12)),
+    url("assets/hero-hardware-background.jpg") center / cover no-repeat;
 }
 
 .hero-overlay {
