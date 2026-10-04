@@ -1,7 +1,7 @@
 {
   "checkedOn": "2026-10-04",
   "profile": "https://scholar.google.com/citations?hl=ko&user=s02ND78AAAAJ&view_op=list_works&sortby=pubdate",
-  "note": "Original figure retained for S3N. Concept illustrations are explanatory schematics based on linked abstracts, not experimental data or figures from the papers.",
+  "note": "All displayed images are original paper figures. Entries without a verified original figure omit the image.",
   "papers": [
     {
       "id": "s3n",
@@ -25,18 +25,20 @@
         "Dynamics normalization",
         "System identification"
       ],
-      "image": "s3n-problem.webp",
+      "image": "s3n-framework.webp",
       "imageType": "paper-figure",
-      "imageSource": "https://arxiv.org/html/2608.01697v2",
-      "imageCaption": "Fig. 1 · Paper figure",
-      "alt": "Paper Figure 1 comparing serial-tree simulation and parallel-link hardware, showing different motion and ground reaction force responses",
-      "width": 1418,
-      "height": 709,
+      "imageSource": "https://arxiv.org/html/2608.01697v2#S3.F3",
+      "imageCaption": "Fig. 3 · S3N framework",
+      "alt": "Original paper Figure 3 showing frequency-domain system identification, simulator-side dynamics normalization, policy training, and deployment on parallel-link hardware",
+      "width": 2048,
+      "height": 1065,
       "sources": [
         "https://arxiv.org/abs/2608.01697",
-        "https://arxiv.org/html/2608.01697v2"
+        "https://arxiv.org/html/2608.01697v2",
+        "https://arxiv.org/html/2608.01697v2#S3.F3"
       ],
-      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:zYLM7Y9cAGgC"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:zYLM7Y9cAGgC",
+      "figureNumber": 3
     },
     {
       "id": "cascaded-dob",
@@ -56,17 +58,21 @@
         "Body orientation",
         "Disturbance rejection"
       ],
-      "image": "cascaded-dob.svg",
-      "alt": "Concept diagram linking outer body disturbance compensation, body-to-leg mapping, and inner leg disturbance observers",
+      "image": "cascaded-dob-paper.webp",
+      "alt": "Original paper Figure 1 showing the outer body disturbance observer, motion mapping, and inner leg disturbance observer for quadruped orientation control",
       "sources": [
         "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:Y0pCki6q_DkC",
-        "https://sites.google.com/view/motion-control-lab/publications/conference"
+        "https://sites.google.com/view/motion-control-lab/publications/conference",
+        "https://doi.org/10.1109/AIM65483.2026.11658302"
       ],
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:Y0pCki6q_DkC",
-      "imageType": "concept-illustration",
-      "imageCaption": "Concept illustration",
-      "width": 900,
-      "height": 500
+      "imageType": "paper-figure",
+      "imageCaption": "Fig. 1 · Cascaded DOB framework",
+      "width": 928,
+      "height": 520,
+      "imageSource": "https://doi.org/10.1109/AIM65483.2026.11658302",
+      "figureNumber": 1,
+      "pdfPage": 1
     },
     {
       "id": "phase-synchronization",
@@ -86,17 +92,12 @@
         "Gait coordination",
         "Period adaptation"
       ],
-      "image": "phase-synchronization.svg",
-      "alt": "Concept diagram of leg phases and touchdown-triggered phase-gap correction through next-cycle period adaptation",
       "sources": [
         "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:Tyk-4Ss8FVUC",
         "https://sites.google.com/view/motion-control-lab/publications/conference"
       ],
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:Tyk-4Ss8FVUC",
-      "imageType": "concept-illustration",
-      "imageCaption": "Concept illustration",
-      "width": 900,
-      "height": 500
+      "imageStatus": "original-not-yet-available"
     },
     {
       "id": "grf-network",
@@ -116,17 +117,22 @@
         "Physics-informed learning",
         "Friction modeling"
       ],
-      "image": "grf-network.svg",
-      "alt": "Concept diagram combining leg dynamics and temporal friction modeling to estimate ground reaction forces",
       "sources": [
         "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12540833",
-        "https://doi.org/10.23919/ICCAS66577.2025.11301124"
+        "https://doi.org/10.23919/ICCAS66577.2025.11301124",
+        "https://ras.papercept.net/images/temp/ICCAS/files/0369.pdf"
       ],
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:UeHWp8X0CEIC",
-      "imageType": "concept-illustration",
-      "imageCaption": "Concept illustration",
-      "width": 900,
-      "height": 500
+      "image": "grf-estimation-paper-observer.webp",
+      "width": 872,
+      "height": 428,
+      "figureNumber": 5,
+      "pdfPage": 4,
+      "imageCaption": "Fig. 5 · M-Net force observer",
+      "alt": "Original paper Figure 5 showing M-Net inverse dynamics and a force observer estimating external ground reaction force",
+      "imageSource": "https://ras.papercept.net/images/temp/ICCAS/files/0369.pdf",
+      "pdf": "https://ras.papercept.net/images/temp/ICCAS/files/0369.pdf",
+      "imageType": "paper-figure"
     },
     {
       "id": "wheel-soil-lateral",
@@ -147,17 +153,22 @@
         "Lateral wheel dynamics",
         "Planetary rovers"
       ],
-      "image": "wheel-soil-lateral.svg",
-      "alt": "Concept schematic of a rover wheel interacting laterally with soft soil and bulldozing resistance",
       "sources": [
         "https://ras.papercept.net/conferences/scripts/rtf/ICCAS25_ContentListWeb_3.html",
-        "https://doi.org/10.23919/ICCAS66577.2025.11301282"
+        "https://doi.org/10.23919/ICCAS66577.2025.11301282",
+        "https://ras.papercept.net/images/temp/ICCAS/files/0364.pdf"
       ],
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:qjMakFHDy7sC",
-      "imageType": "concept-illustration",
-      "imageCaption": "Concept illustration",
-      "width": 900,
-      "height": 500
+      "image": "wheel-soil-lateral-paper.webp",
+      "width": 756,
+      "height": 1148,
+      "figureNumber": 3,
+      "pdfPage": 2,
+      "imageCaption": "Fig. 3 · Wheel-soil interaction model",
+      "alt": "Original paper Figure 3 illustrating soft-soil stresses, wheel geometry, and lateral bulldozing forces in the wheel-soil interaction model",
+      "imageSource": "https://ras.papercept.net/images/temp/ICCAS/files/0364.pdf",
+      "pdf": "https://ras.papercept.net/images/temp/ICCAS/files/0364.pdf",
+      "imageType": "paper-figure"
     },
     {
       "id": "imu-bias",
@@ -178,17 +189,22 @@
         "IMU bias",
         "Force observer"
       ],
-      "image": "imu-bias.svg",
-      "alt": "Concept diagram comparing force-observer body acceleration with IMU acceleration for bias-compensated Kalman state estimation",
       "sources": [
         "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12541032",
-        "https://doi.org/10.23919/ICCAS66577.2025.11301365"
+        "https://doi.org/10.23919/ICCAS66577.2025.11301365",
+        "https://ras.papercept.net/images/temp/ICCAS/files/0486.pdf"
       ],
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:2osOgNQ5qMEC",
-      "imageType": "concept-illustration",
-      "imageCaption": "Concept illustration",
-      "width": 900,
-      "height": 500
+      "image": "imu-bias-paper.webp",
+      "width": 888,
+      "height": 512,
+      "figureNumber": 1,
+      "pdfPage": 1,
+      "imageCaption": "Fig. 1 · IMU bias compensation",
+      "alt": "Original paper Figure 1 comparing IMU acceleration with force observer acceleration to compensate bias and improve quadruped state estimation",
+      "imageSource": "https://ras.papercept.net/images/temp/ICCAS/files/0486.pdf",
+      "pdf": "https://ras.papercept.net/images/temp/ICCAS/files/0486.pdf",
+      "imageType": "paper-figure"
     },
     {
       "id": "mysteric-net",
@@ -209,17 +225,20 @@
         "Hysteretic friction",
         "Temporal learning"
       ],
-      "image": "mysteric-net.svg",
-      "alt": "Concept diagram combining a Lagrangian model with a temporal friction network for multi-joint torque prediction and feedforward tracking",
+      "image": "mysteric-net-paper.webp",
+      "alt": "Original paper Figure 3 showing the H-Net temporal friction model and L-Net Lagrangian dynamics architecture for robotic leg control",
       "sources": [
         "https://ras.papercept.net/conferences/conferences/IROS25/program/IROS25_ContentListWeb_1.html",
         "https://doi.org/10.1109/IROS60139.2025.11246571"
       ],
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:IjCSPb-OGe4C",
-      "imageType": "concept-illustration",
-      "imageCaption": "Concept illustration",
-      "width": 900,
-      "height": 500
+      "imageType": "paper-figure",
+      "imageCaption": "Fig. 3 · Mysteric-Net architecture",
+      "width": 968,
+      "height": 1420,
+      "imageSource": "https://doi.org/10.1109/IROS60139.2025.11246571",
+      "figureNumber": 3,
+      "pdfPage": 3
     },
     {
       "id": "tewd-dfo",
@@ -241,17 +260,12 @@
         "Soft soil",
         "Terramechanics"
       ],
-      "image": "tewd-dfo.svg",
-      "alt": "Concept diagram of terramechanics-enhanced wheel dynamics feeding a soft-soil-aware driving force observer",
       "sources": [
         "https://scholar.dgist.ac.kr/handle/20.500.11750/60048",
         "https://doi.org/10.1109/IECON58223.2025.11221635"
       ],
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:9yKSN-GCB0IC",
-      "imageType": "concept-illustration",
-      "imageCaption": "Concept illustration",
-      "width": 900,
-      "height": 500
+      "imageStatus": "original-not-yet-available"
     },
     {
       "id": "slip-control",
@@ -273,17 +287,20 @@
         "Admittance control",
         "Trunk feedback"
       ],
-      "image": "slip-control.svg",
-      "alt": "Concept diagram projecting SLIP spring-mass dynamics onto articulated legs and connecting them to trunk feedback through a Jacobian",
+      "image": "slip-control-paper.webp",
+      "alt": "Original paper Figure 2 showing the full SLIP embodied quadrupedal control framework",
       "sources": [
         "https://scholar.dgist.ac.kr/handle/20.500.11750/57909",
         "https://doi.org/10.1109/IROS58592.2024.10802545"
       ],
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:d1gkVwhDpl0C",
-      "imageType": "concept-illustration",
-      "imageCaption": "Concept illustration",
-      "width": 900,
-      "height": 500
+      "imageType": "paper-figure",
+      "imageCaption": "Fig. 2 · Quadrupedal control framework",
+      "width": 1497,
+      "height": 351,
+      "imageSource": "https://doi.org/10.1109/IROS58592.2024.10802545",
+      "figureNumber": 2,
+      "pdfPage": 2
     },
     {
       "id": "slip-jumping",
@@ -306,17 +323,23 @@
         "Virtual compliance",
         "Geared actuators"
       ],
-      "image": "slip-jumping.svg",
-      "alt": "Concept illustration of SLIP virtual compliance and admittance control for a high-reduction-ratio articulated jumping leg",
       "sources": [
         "https://doi.org/10.36227/techrxiv.24321025.v1",
-        "https://api.crossref.org/works/10.36227/techrxiv.24321025.v1"
+        "https://api.crossref.org/works/10.36227/techrxiv.24321025.v1",
+        "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.24321025.v1"
       ],
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:u5HHmVD_uO8C",
-      "imageType": "concept-illustration",
-      "imageCaption": "Concept illustration",
-      "width": 900,
-      "height": 500
+      "image": "slip-jumping-paper.webp",
+      "width": 615,
+      "height": 87,
+      "figureNumber": 12,
+      "pdfPage": 7,
+      "imageCaption": "Fig. 12 · Quadrupedal jumping experiment",
+      "alt": "Original paper Figure 12 showing four successive frames of the quadruped robot jumping experiment",
+      "imageSource": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.24321025.v1",
+      "pdf": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.24321025.v1",
+      "imageType": "paper-figure",
+      "imageLicense": "CC BY-NC-SA 4.0"
     }
   ]
 }
