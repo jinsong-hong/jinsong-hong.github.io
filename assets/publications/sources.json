@@ -1,0 +1,322 @@
+{
+  "checkedOn": "2026-10-04",
+  "profile": "https://scholar.google.com/citations?hl=ko&user=s02ND78AAAAJ&view_op=list_works&sortby=pubdate",
+  "note": "Original figure retained for S3N. Concept illustrations are explanatory schematics based on linked abstracts, not experimental data or figures from the papers.",
+  "papers": [
+    {
+      "id": "s3n",
+      "title": "Bridging the Sim-to-Real Gap in Parallel-Link Leg Mechanisms via Simulator-Side Dynamics Normalization",
+      "year": 2026,
+      "venue": "arXiv:2608.01697",
+      "status": "Preprint",
+      "authors": [
+        "Jinsong Hong",
+        "Jangho Kim",
+        "Jihwan Lee",
+        "Donghyun Kim",
+        "Sehoon Oh"
+      ],
+      "url": "https://arxiv.org/abs/2608.01697",
+      "pdf": "https://arxiv.org/pdf/2608.01697",
+      "scholar": "zYLM7Y9cAGgC",
+      "summary": "Restores actuator inertia, damping, and residual linkage inertia lost when parallel-link legs are represented by serial-tree simulators. Hardware-informed Simulator-Side System Normalization (S3N) improves motion and force consistency, reducing the phase-averaged, command-normalized locomotion gap from 17.3% to 9.9%.",
+      "topics": [
+        "Sim-to-real",
+        "Dynamics normalization",
+        "System identification"
+      ],
+      "image": "s3n-problem.webp",
+      "imageType": "paper-figure",
+      "imageSource": "https://arxiv.org/html/2608.01697v2",
+      "imageCaption": "Fig. 1 · Paper figure",
+      "alt": "Paper Figure 1 comparing serial-tree simulation and parallel-link hardware, showing different motion and ground reaction force responses",
+      "width": 1418,
+      "height": 709,
+      "sources": [
+        "https://arxiv.org/abs/2608.01697",
+        "https://arxiv.org/html/2608.01697v2"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:zYLM7Y9cAGgC"
+    },
+    {
+      "id": "cascaded-dob",
+      "title": "Design of a Cascaded Disturbance Observer for Robust Quadruped Body Orientation Control",
+      "year": 2026,
+      "venue": "IEEE/ASME AIM 2026",
+      "authors": [
+        "Jinsong Hong",
+        "Changmin Yeo",
+        "Sehoon Oh"
+      ],
+      "url": "https://ieeexplore.ieee.org/abstract/document/11658302/",
+      "scholar": "Y0pCki6q_DkC",
+      "summary": "Combines an inner-loop leg disturbance observer with an outer-loop Body DOB for quadruped orientation control. The outer observer estimates roll and pitch disturbances and maps the compensation into leg radial velocity commands, while the inner observer compensates leg dynamics and friction.",
+      "topics": [
+        "Cascaded DOB",
+        "Body orientation",
+        "Disturbance rejection"
+      ],
+      "image": "cascaded-dob.svg",
+      "alt": "Concept diagram linking outer body disturbance compensation, body-to-leg mapping, and inner leg disturbance observers",
+      "sources": [
+        "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:Y0pCki6q_DkC",
+        "https://sites.google.com/view/motion-control-lab/publications/conference"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:Y0pCki6q_DkC",
+      "imageType": "concept-illustration",
+      "imageCaption": "Concept illustration",
+      "width": 900,
+      "height": 500
+    },
+    {
+      "id": "phase-synchronization",
+      "title": "Whole-Body Phase Synchronization via Period Adaptation for SLIP Driven Quadruped Robot",
+      "year": 2026,
+      "venue": "IEEE/ASME AIM 2026",
+      "authors": [
+        "Changmin Yeo",
+        "Jinsong Hong",
+        "Sehoon Oh"
+      ],
+      "url": "https://ieeexplore.ieee.org/abstract/document/11658229/",
+      "scholar": "Tyk-4Ss8FVUC",
+      "summary": "Coordinates independently controlled SLIP legs through touchdown-triggered period adaptation. Correcting inter-leg phase drift prevents early-touchdown-induced gait collapse and maintains trunk velocity tracking in MuJoCo simulations under constant and changing speed commands.",
+      "topics": [
+        "SLIP dynamics",
+        "Gait coordination",
+        "Period adaptation"
+      ],
+      "image": "phase-synchronization.svg",
+      "alt": "Concept diagram of leg phases and touchdown-triggered phase-gap correction through next-cycle period adaptation",
+      "sources": [
+        "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:Tyk-4Ss8FVUC",
+        "https://sites.google.com/view/motion-control-lab/publications/conference"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:Tyk-4Ss8FVUC",
+      "imageType": "concept-illustration",
+      "imageCaption": "Concept illustration",
+      "width": 900,
+      "height": 500
+    },
+    {
+      "id": "grf-network",
+      "title": "Dynamic Friction-Aware Lagrangian Network for Accurate GRF Estimation in Legged Robot",
+      "year": 2025,
+      "venue": "ICCAS 2025",
+      "authors": [
+        "Hoyeong Yeo",
+        "Jinsong Hong",
+        "Sehoon Oh"
+      ],
+      "url": "https://doi.org/10.23919/ICCAS66577.2025.11301124",
+      "scholar": "UeHWp8X0CEIC",
+      "summary": "A physics-informed dynamics network combines Lagrangian mechanics with temporal friction modeling to estimate ground reaction forces without dedicated force sensors. MuJoCo experiments on a quadruped leg evaluate joint torque and GRF estimation.",
+      "topics": [
+        "Ground reaction force",
+        "Physics-informed learning",
+        "Friction modeling"
+      ],
+      "image": "grf-network.svg",
+      "alt": "Concept diagram combining leg dynamics and temporal friction modeling to estimate ground reaction forces",
+      "sources": [
+        "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12540833",
+        "https://doi.org/10.23919/ICCAS66577.2025.11301124"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:UeHWp8X0CEIC",
+      "imageType": "concept-illustration",
+      "imageCaption": "Concept illustration",
+      "width": 900,
+      "height": 500
+    },
+    {
+      "id": "wheel-soil-lateral",
+      "title": "Dynamic Modeling of Wheel-Soil Lateral Interaction with Scalable Bulldozing Effects for Planetary Rover",
+      "year": 2025,
+      "venue": "ICCAS 2025",
+      "authors": [
+        "Changmin Yeo",
+        "Younghoon Seo",
+        "Jinsong Hong",
+        "Sehoon Oh"
+      ],
+      "url": "https://doi.org/10.23919/ICCAS66577.2025.11301282",
+      "scholar": "qjMakFHDy7sC",
+      "summary": "A closed-form lateral wheel-soil model combines transient dynamics with scalable bulldozing resistance for rover motion on soft terrain. Full-rover simulations evaluate its response to changing steering amplitudes and frequencies.",
+      "topics": [
+        "Terramechanics",
+        "Lateral wheel dynamics",
+        "Planetary rovers"
+      ],
+      "image": "wheel-soil-lateral.svg",
+      "alt": "Concept schematic of a rover wheel interacting laterally with soft soil and bulldozing resistance",
+      "sources": [
+        "https://ras.papercept.net/conferences/scripts/rtf/ICCAS25_ContentListWeb_3.html",
+        "https://doi.org/10.23919/ICCAS66577.2025.11301282"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:qjMakFHDy7sC",
+      "imageType": "concept-illustration",
+      "imageCaption": "Concept illustration",
+      "width": 900,
+      "height": 500
+    },
+    {
+      "id": "imu-bias",
+      "title": "Robust State Estimation of Quadruped Robots via Force Observer-Based IMU Bias Compensation",
+      "year": 2025,
+      "venue": "ICCAS 2025",
+      "authors": [
+        "Jangho Kim",
+        "Jihwan Lee",
+        "Jinsong Hong",
+        "Sehoon Oh"
+      ],
+      "url": "https://doi.org/10.23919/ICCAS66577.2025.11301365",
+      "scholar": "2osOgNQ5qMEC",
+      "summary": "A force observer estimates body acceleration from ground reaction forces and compares it with IMU measurements to compensate accelerometer bias in a Kalman filter. Simulations evaluate reduced position drift and velocity estimation error without exteroceptive sensing.",
+      "topics": [
+        "State estimation",
+        "IMU bias",
+        "Force observer"
+      ],
+      "image": "imu-bias.svg",
+      "alt": "Concept diagram comparing force-observer body acceleration with IMU acceleration for bias-compensated Kalman state estimation",
+      "sources": [
+        "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12541032",
+        "https://doi.org/10.23919/ICCAS66577.2025.11301365"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:2osOgNQ5qMEC",
+      "imageType": "concept-illustration",
+      "imageCaption": "Concept illustration",
+      "width": 900,
+      "height": 500
+    },
+    {
+      "id": "mysteric-net",
+      "title": "Mysteric-Net: MIMO Hysteretic Friction-aware Lagrangian-based Network for Legged Robot",
+      "year": 2025,
+      "venue": "IEEE/RSJ IROS 2025",
+      "authors": [
+        "Hoyeong Yeo",
+        "Jinsong Hong",
+        "Taejune Kong",
+        "Sehoon Oh"
+      ],
+      "url": "https://doi.org/10.1109/IROS60139.2025.11246571",
+      "scholar": "IjCSPb-OGe4C",
+      "summary": "Combines a Lagrangian dynamics model with a Temporal Convolutional Network to capture history-dependent friction and coupling between joints. Robotic-leg experiments evaluate inverse dynamics estimation and feedforward tracking control.",
+      "topics": [
+        "Inverse dynamics",
+        "Hysteretic friction",
+        "Temporal learning"
+      ],
+      "image": "mysteric-net.svg",
+      "alt": "Concept diagram combining a Lagrangian model with a temporal friction network for multi-joint torque prediction and feedforward tracking",
+      "sources": [
+        "https://ras.papercept.net/conferences/conferences/IROS25/program/IROS25_ContentListWeb_1.html",
+        "https://doi.org/10.1109/IROS60139.2025.11246571"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:IjCSPb-OGe4C",
+      "imageType": "concept-illustration",
+      "imageCaption": "Concept illustration",
+      "width": 900,
+      "height": 500
+    },
+    {
+      "id": "tewd-dfo",
+      "title": "TEWD-DFO: A Soft-Soil-Aware Driving Force Observer Using Terramechanics-Enhanced Wheel Dynamics for Planetary Rover",
+      "year": 2025,
+      "venue": "IEEE IECON 2025",
+      "authors": [
+        "Changmin Yeo",
+        "Martin Görner",
+        "Younghoon Seo",
+        "Jinsong Hong",
+        "Sehoon Oh"
+      ],
+      "url": "https://doi.org/10.1109/IECON58223.2025.11221635",
+      "scholar": "9yKSN-GCB0IC",
+      "summary": "A terramechanics-enhanced wheel model accounts for soil resistance to estimate rover driving forces from internal signals. ProjectChrono simulations on soft soil evaluate reduced estimation offsets without additional external force sensors.",
+      "topics": [
+        "Driving force observer",
+        "Soft soil",
+        "Terramechanics"
+      ],
+      "image": "tewd-dfo.svg",
+      "alt": "Concept diagram of terramechanics-enhanced wheel dynamics feeding a soft-soil-aware driving force observer",
+      "sources": [
+        "https://scholar.dgist.ac.kr/handle/20.500.11750/60048",
+        "https://doi.org/10.1109/IECON58223.2025.11221635"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:9yKSN-GCB0IC",
+      "imageType": "concept-illustration",
+      "imageCaption": "Concept illustration",
+      "width": 900,
+      "height": 500
+    },
+    {
+      "id": "slip-control",
+      "title": "SLIP Embodied Robust Quadruped Robot Control",
+      "year": 2024,
+      "venue": "IEEE/RSJ IROS 2024",
+      "authors": [
+        "Jin Song Hong",
+        "Changmin Yeo",
+        "Sangjin Bae",
+        "Jeongwoo Hong",
+        "Sehoon Oh"
+      ],
+      "url": "https://doi.org/10.1109/IROS58592.2024.10802545",
+      "scholar": "d1gkVwhDpl0C",
+      "summary": "A rotating-workspace force observer and admittance control project Spring-Loaded Inverted Pendulum dynamics onto articulated legs. A Jacobian-based framework connects leg dynamics to trunk feedback control, with simulation comparisons against Virtual Model Control.",
+      "topics": [
+        "SLIP dynamics",
+        "Admittance control",
+        "Trunk feedback"
+      ],
+      "image": "slip-control.svg",
+      "alt": "Concept diagram projecting SLIP spring-mass dynamics onto articulated legs and connecting them to trunk feedback through a Jacobian",
+      "sources": [
+        "https://scholar.dgist.ac.kr/handle/20.500.11750/57909",
+        "https://doi.org/10.1109/IROS58592.2024.10802545"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:d1gkVwhDpl0C",
+      "imageType": "concept-illustration",
+      "imageCaption": "Concept illustration",
+      "width": 900,
+      "height": 500
+    },
+    {
+      "id": "slip-jumping",
+      "title": "A Stable Quadrupedal Jumping Control based on SLIP Dynamics Realization with High Reduction Ratio Actuator",
+      "year": 2023,
+      "venue": "TechRxiv",
+      "status": "Preprint",
+      "authors": [
+        "Jeongwoo Hong",
+        "Sangjin Bae",
+        "JinSong Hong",
+        "Changmin Yeo",
+        "Sehoon Oh"
+      ],
+      "url": "https://doi.org/10.36227/techrxiv.24321025.v1",
+      "scholar": "u5HHmVD_uO8C",
+      "summary": "Realizes compliant SLIP dynamics on articulated legs with high reduction ratio actuators using admittance control in the rotating workspace. A trunk-to-leg Jacobian connects body motion to the SLIP-realized legs, enabling stable vertical jumping without passive springs or foot force sensors.",
+      "topics": [
+        "Quadrupedal jumping",
+        "Virtual compliance",
+        "Geared actuators"
+      ],
+      "image": "slip-jumping.svg",
+      "alt": "Concept illustration of SLIP virtual compliance and admittance control for a high-reduction-ratio articulated jumping leg",
+      "sources": [
+        "https://doi.org/10.36227/techrxiv.24321025.v1",
+        "https://api.crossref.org/works/10.36227/techrxiv.24321025.v1"
+      ],
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s02ND78AAAAJ&citation_for_view=s02ND78AAAAJ:u5HHmVD_uO8C",
+      "imageType": "concept-illustration",
+      "imageCaption": "Concept illustration",
+      "width": 900,
+      "height": 500
+    }
+  ]
+}

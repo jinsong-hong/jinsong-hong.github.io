@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" aria-labelledby="title desc">
+  <title id="title">SLIP dynamics realized in a high reduction ratio articulated leg</title>
+  <desc id="desc">Concept illustration connecting a spring-mass SLIP template through rotating-workspace admittance control to a geared articulated leg. Virtual compliance and stance, flight, and touchdown are schematic concepts.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#1f6f64" stroke-width="1.7"/></marker>
+    <style>text{font-family:Arial,Helvetica,sans-serif;fill:#17212b}.label{font-size:22px;font-weight:600}.detail{font-size:20px;fill:#52625f}.wire{fill:none;stroke:#1f6f64;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="900" height="500" rx="18" fill="#f7f8f5"/>
+  <text x="36" y="52" font-size="28" font-weight="700">SLIP dynamics with geared articulated legs</text>
+  <text x="36" y="85" class="detail">Virtual compliance connects a spring–mass template to the hardware</text>
+  <rect x="36" y="113" width="828" height="252" rx="15" fill="#fff" stroke="#d7e0da" stroke-width="2"/>
+  <text x="161" y="150" text-anchor="middle" class="label">SLIP template</text>
+  <circle cx="161" cy="192" r="22" fill="#1f6f64"/>
+  <path d="M161 214 V228 L144 238 L178 250 L144 262 L178 274 L144 286 L161 298 V314" fill="none" stroke="#1f6f64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M109 323 H213" stroke="#b8cdc5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="161" cy="317" r="6" fill="#17212b"/>
+  <text x="161" y="350" text-anchor="middle" class="detail">spring–mass behavior</text>
+  <rect x="322" y="171" width="244" height="149" rx="13" fill="#f0f5ef" stroke="#b8cdc5" stroke-width="2"/>
+  <text x="444" y="210" text-anchor="middle" class="label">Admittance control</text>
+  <text x="444" y="242" text-anchor="middle" class="detail">rotating workspace</text>
+  <path d="M359 257 H529" stroke="#cddbd2" stroke-width="1.5"/>
+  <text x="444" y="287" text-anchor="middle" font-size="22" font-weight="600" fill="#1f6f64">Virtual compliance</text>
+  <path d="M237 246 H311 M568 246 H645" class="wire"/>
+  <text x="733" y="150" text-anchor="middle" class="label">Articulated leg</text>
+  <rect x="676" y="174" width="113" height="30" rx="8" fill="#17212b"/>
+  <g fill="none" stroke="#17212b" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M735 204 L786 255 L730 315"/>
+  </g>
+  <g fill="#fff" stroke="#b5653c" stroke-width="3">
+    <circle cx="735" cy="204" r="15"/><circle cx="786" cy="255" r="13"/>
+  </g>
+  <g stroke="#b5653c" stroke-width="2" stroke-linecap="round">
+    <path d="M735 185 V192 M735 216 V223 M716 204 H723 M747 204 H754 M721 190 L726 195 M744 213 L749 218 M721 218 L726 213 M744 195 L749 190"/>
+  </g>
+  <circle cx="735" cy="204" r="5" fill="#b5653c"/>
+  <circle cx="730" cy="315" r="6" fill="#17212b"/>
+  <path d="M675 323 H804" stroke="#b8cdc5" stroke-width="3" stroke-linecap="round"/>
+  <text x="733" y="350" text-anchor="middle" class="detail">High reduction ratio</text>
+  <g fill="#e8efea">
+    <rect x="105" y="393" width="164" height="46" rx="23"/><rect x="369" y="393" width="164" height="46" rx="23"/><rect x="633" y="393" width="164" height="46" rx="23"/>
+  </g>
+  <text x="187" y="423" text-anchor="middle" class="label">Stance</text>
+  <text x="451" y="423" text-anchor="middle" class="label">Flight</text>
+  <text x="715" y="423" text-anchor="middle" class="label">Touchdown</text>
+  <path class="wire" d="M281 416 H356 M545 416 H620"/>
+  <text x="36" y="474" font-size="16" fill="#697672">Schematic jumping cycle</text>
+  <text x="864" y="474" text-anchor="end" font-size="16" fill="#697672">Concept illustration</text>
+</svg>
