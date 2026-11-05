@@ -562,9 +562,13 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 10;
   object-fit: contain;
   background: #ffffff;
+}
+
+.visual-card:not(.visual-diagram) img,
+.visual-card video {
+  aspect-ratio: 16 / 10;
 }
 
 .visual-card video {
@@ -592,10 +596,6 @@ h3 {
 
 .visual-diagram {
   margin-top: 22px;
-}
-
-.visual-diagram img {
-  aspect-ratio: auto;
 }
 
 .visual-plot img {
