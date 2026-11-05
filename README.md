@@ -37,7 +37,7 @@ GitHub Pages normally serves the site automatically for a repository named
 - To embed videos, place public MP4 files under `assets/videos/` or replace
   the video placeholders with YouTube/Vimeo embed links.
 - The homepage blooper reel uses `outtakes.js`, `assets/videos/outtakes/`,
-  and `assets/video-posters/outtakes/`. It starts muted, cycles through three
+  and `assets/video-posters/outtakes/`. It starts muted, cycles through four
   clips, and supports manual selection and native playback controls.
 - Project images are stored under `assets/projects/`.
 - Source PDFs for project figures can be stored next to the rendered images.
