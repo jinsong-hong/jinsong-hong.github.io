@@ -3,432 +3,254 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Project portfolio for Jinsong Hong, including legged robot sim-to-real control, observer-based control, and parallel-link quadruped robot mechanism design.">
+  <meta name="description" content="Jinsong Hong's robotics projects: hardware videos, control diagrams, and experiments on parallel-link and harmonic drive quadruped robots.">
   <title>Projects | Jinsong Hong</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=visual-projects-20261105">
 </head>
-<body>
+<body class="visual-projects">
   <header class="site-header">
     <a class="brand" href="index.html#top" aria-label="Jinsong Hong home">Jinsong Hong</a>
     <nav class="nav-links" aria-label="Primary navigation">
       <a href="index.html#research">Research</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" aria-current="page">Projects</a>
       <a href="#videos">Videos</a>
       <a href="index.html#publications">Publications</a>
       <a href="index.html#contact">Contact</a>
     </nav>
   </header>
-
   <main id="top">
     <section class="page-hero" aria-labelledby="page-title">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <p class="eyebrow">Project Portfolio</p>
+        <p class="eyebrow">Hardware, control &amp; learning</p>
         <h1 id="page-title">Projects</h1>
-        <p class="hero-copy">
-          Detailed project notes, design figures, analysis results, and media
-          for my legged robotics research.
-        </p>
       </div>
     </section>
-
-    <section class="section project-tabs" aria-label="Project navigation">
+    <nav class="section project-tabs" aria-label="Project navigation">
       <a href="#observer-aware-locomotion">Sim-to-Real</a>
+      <a href="#quad-v1">Harmonic drive (v1)</a>
+      <a href="#observer-control">Body DOB</a>
       <a href="#system-identification">System ID</a>
-      <a href="#parallel-link-design">Mechanism Design</a>
-      <a href="#parallel-link-control">Hardware Control</a>
-      <a href="#observer-control">Observer Control</a>
-      <a href="#programming">Programming</a>
-      <a href="#videos">Videos</a>
-    </section>
-
-    <section class="section project-detail" id="observer-aware-locomotion" aria-labelledby="observer-aware-title">
-      <div class="featured-project">
-        <div>
-          <p class="project-label">Main Project</p>
-          <h2 id="observer-aware-title">Sim-to-Real for Hardware Consistent Learning</h2>
-          <p>
-            My current work focuses on how dynamics-based low-level control can
-            be combined with learned locomotion policies. The goal is to improve
-            robustness under actuator mismatch, contact uncertainty, delay, and
-            external disturbance without relying only on reward tuning.
-          </p>
-          <div class="tag-list" aria-label="Observer-aware locomotion keywords">
-            <span>Sim-to-Real</span>
-            <span>Legged RL</span>
-            <span>Low-Level Control</span>
-            <span>Robustness</span>
-          </div>
-        </div>
-        <ul class="project-points" aria-label="Main project components">
-          <li>Observer-based force and disturbance feedback signals</li>
-          <li>Admittance/impedance interfaces for contact-rich walking</li>
-          <li>Policy action-space comparison: torque vs. position target</li>
-          <li>Hardware validation with matched disturbance tests</li>
-        </ul>
+      <a href="#parallel-link-design">Design</a>
+      <a href="#simulation">Simulation</a>
+    </nav>
+    <section class="section visual-section" id="observer-aware-locomotion" aria-labelledby="locomotion-title">
+      <div class="visual-heading">
+        <div><p class="section-kicker">Parallel-link platform</p><h2 id="locomotion-title">Sim-to-real locomotion</h2></div>
+        <a class="project-link" href="https://arxiv.org/abs/2608.01697" target="_blank" rel="noopener noreferrer">S3N preprint &#8599;</a>
       </div>
-    </section>
-
-    <section class="section project-detail" id="system-identification" aria-labelledby="system-identification-title">
-      <div class="section-heading">
-        <p class="section-kicker">Modeling</p>
-        <h2 id="system-identification-title">Frequency-Domain System Identification</h2>
-        <p class="section-summary">
-          System identification for sim-to-real control, including MIMO
-          identification of the leg dynamics and actuator identification of
-          inertia, damping, and system delay.
-        </p>
-      </div>
-      <div class="featured-project">
-        <div>
-          <p class="project-label">Leg Dynamics</p>
-          <h3>MIMO System Identification</h3>
-          <p>
-            Multi Input Multi Output identification is used to estimate the leg
-            dynamics, including the coupled mass matrix structure needed for
-            model-aware low-level control.
-          </p>
-          <div class="tag-list" aria-label="MIMO system identification keywords">
-            <span>Frequency Domain</span>
-            <span>MIMO ID</span>
-            <span>Leg M Matrix</span>
-            <span>Sim-to-Real</span>
-          </div>
-        </div>
-        <ul class="project-points" aria-label="System identification components">
-          <li>Leg mass matrix identification from multi-input excitation</li>
-          <li>Actuator inertia and damping identification</li>
-          <li>System delay estimation for hardware-aware simulation</li>
-          <li>Frequency-domain validation for sim-to-real controller tuning</li>
-        </ul>
-      </div>
-      <div class="result-gallery" aria-label="System identification result figures">
-        <figure class="result-card">
-          <img src="assets/projects/system-identification/actuator-frequency-response.png" alt="Actuator frequency response plot comparing measured and fitted magnitude and phase" loading="lazy">
-          <figcaption>
-            <p class="project-label">Actuator ID</p>
-            <h3>Actuator Frequency Response</h3>
-            <p>
-              Measured and fitted actuator response used to identify actuator
-              inertia, damping, and system delay for hardware-aware control.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="result-card">
-          <img src="assets/projects/system-identification/mimo-id-bode-mag.png" alt="MIMO leg dynamics Bode magnitude plot comparing experiment, CAD inertia, and identified model" loading="lazy">
-          <figcaption>
-            <p class="project-label">Leg Dynamics</p>
-            <h3>MIMO Bode Magnitude</h3>
-            <p>
-              Frequency-domain magnitude response for identifying the coupled
-              leg dynamics and validating the leg mass matrix model.
-            </p>
-            <div class="figure-links">
-              <a href="assets/projects/system-identification/mimo-id-bode-mag.pdf">PDF</a>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="result-card">
-          <img src="assets/projects/system-identification/mimo-id-bode-phase.png" alt="MIMO leg dynamics Bode phase plot comparing experiment, CAD inertia, and identified model" loading="lazy">
-          <figcaption>
-            <p class="project-label">Leg Dynamics</p>
-            <h3>MIMO Bode Phase</h3>
-            <p>
-              Phase response validation for the identified MIMO leg model,
-              including coupled off-diagonal dynamics.
-            </p>
-            <div class="figure-links">
-              <a href="assets/projects/system-identification/mimo-id-bode-phase.pdf">PDF</a>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="video-grid system-id-grid">
-        <article class="video-card">
-          <video class="project-video" controls muted playsinline preload="metadata">
-            <source src="assets/videos/system-id/mimo-id-sum-x10.mp4" type="video/mp4">
-          </video>
-          <div class="video-copy">
-            <p class="project-label">MIMO System Identification</p>
-            <h3>MIMO ID SUM Excitation</h3>
-            <p>
-              Frequency-domain multi-input multi-output identification for the
-              leg dynamics and mass matrix estimation.
-            </p>
-          </div>
-        </article>
-        <article class="video-card">
-          <video class="project-video" controls muted playsinline preload="metadata">
-            <source src="assets/videos/system-id/mimo-id-sub-x10.mp4" type="video/mp4">
-          </video>
-          <div class="video-copy">
-            <p class="project-label">MIMO System Identification</p>
-            <h3>MIMO ID SUB Excitation</h3>
-            <p>
-              Complementary MIMO excitation case for validating coupled leg
-              dynamics in the frequency domain.
-            </p>
-          </div>
-        </article>
-        <article class="video-card">
-          <video class="project-video" controls muted playsinline preload="metadata">
-            <source src="assets/videos/system-id/actuator-id.mp4" type="video/mp4">
-          </video>
-          <div class="video-copy">
-            <p class="project-label">Actuator System Identification</p>
-            <h3>Actuator Inertia, Damping, and Delay</h3>
-            <p>
-              Actuator-level identification of reflected inertia, damping, and
-              system delay for hardware-aware controller design.
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section project-detail" id="parallel-link-design" aria-labelledby="parallel-link-design-title">
-      <div class="design-showcase">
-        <div class="design-copy">
-          <p class="project-label">Design Project</p>
-          <h2 id="parallel-link-design-title">Parallel-Link Quadruped Robot Design</h2>
-          <p>
-            This project studies the mechanical structure of a parallel-link
-            quadruped robot platform. The design emphasizes compact actuation,
-            load-bearing leg geometry, manufacturable components, and structural
-            safety under representative load cases.
-          </p>
-          <div class="tag-list tag-list-spaced" aria-label="Parallel-link quadruped design keywords">
-            <span>Mechanism Design</span>
-            <span>Design Analysis</span>
-            <span>Structural Analysis</span>
-            <span>FEA</span>
-            <span>CAD</span>
-            <span>SolidWorks</span>
-            <span>AutoCAD</span>
-            <span>Quadruped Robot</span>
-          </div>
-          <div class="project-meta" aria-label="Parallel-link quadruped design details">
-            <div>
-              <span>Method</span>
-              <strong>CAD modeling and finite element analysis</strong>
-            </div>
-            <div>
-              <span>Load Case</span>
-              <strong>400 N structural load evaluation</strong>
-            </div>
-            <div>
-              <span>Components</span>
-              <strong>Motor housing, ring structure, and leg link</strong>
-            </div>
-          </div>
-          <a class="project-link" href="assets/projects/parallel-link-quadruped-design/leg-mechanism-figure.pdf">Leg figure PDF</a>
-        </div>
-        <div class="design-story" aria-label="Parallel-link quadruped robot design workflow">
-          <figure class="design-figure story-step">
-            <span class="story-index">01</span>
-            <p class="story-label">Analysis</p>
-            <img src="assets/projects/parallel-link-quadruped-design/leg-link-fea.png" alt="Finite element analysis of a long leg link component under a 400 N load" loading="lazy">
-            <figcaption>Structural analysis of the leg link under a representative 400 N load case.</figcaption>
-          </figure>
-          <figure class="design-figure story-step">
-            <span class="story-index">02</span>
-            <p class="story-label">Mechanism Drawing</p>
-            <img src="assets/projects/parallel-link-quadruped-design/leg-mechanism-diagram.png" alt="Parallel-link leg mechanism diagram showing hip joint, knee joint, knee crank link, bearing, thigh, shank, and joint coordinates" loading="lazy">
-            <figcaption>Leg mechanism diagram with hip/knee modules, bearing interface, crank link, thigh, shank, and joint coordinates.</figcaption>
-          </figure>
-          <figure class="design-figure story-step">
-            <span class="story-index">03</span>
-            <p class="story-label">Fabricated Parts</p>
-            <img src="assets/projects/parallel-link-quadruped-design/assembled-parts.png" alt="Manufactured parts for a parallel-link quadruped robot arranged on a table" loading="lazy">
-            <figcaption>Manufactured robot components prepared for assembly.</figcaption>
-          </figure>
-          <figure class="design-figure story-step story-step-wide">
-            <span class="story-index">04</span>
-            <p class="story-label">MuJoCo Simulation Validation</p>
-            <video class="project-video" controls muted playsinline preload="metadata">
-              <source src="assets/videos/one-leg-landing-mujoco.mp4" type="video/mp4">
-            </video>
-            <figcaption>One-leg landing validation in MuJoCo before the hardware landing experiment.</figcaption>
-          </figure>
-          <figure class="design-figure story-step story-step-wide">
-            <span class="story-index">05</span>
-            <p class="story-label">Single-Leg Test</p>
-            <video class="project-video" controls muted playsinline preload="metadata">
-              <source src="assets/videos/oneleg-test-jumping-admittance.mp4" type="video/mp4">
-            </video>
-            <figcaption>Single-leg prototype constrained on a vertical slide for z-axis jumping and admittance-controlled landing tests.</figcaption>
-          </figure>
-          <figure class="design-figure story-step story-step-wide">
-            <span class="story-index">06</span>
-            <p class="story-label">Full Robot Assembly</p>
-            <video class="project-video" controls muted playsinline preload="metadata">
-              <source src="assets/videos/assemble-video.mp4" type="video/mp4">
-            </video>
-            <figcaption>Full quadruped assembly video showing the integrated body frame, actuator modules, and parallel-link legs after simulation and single-leg validation.</figcaption>
-          </figure>
-          <figure class="design-figure story-step story-step-wide final-hardware-photo">
-            <span class="story-index">07</span>
-            <p class="story-label">Final Hardware Result</p>
-            <img src="assets/projects/parallel-link-quadruped-design/final-hardware-picture.jpg" alt="Final assembled parallel-link quadruped robot hardware with red and black leg modules" loading="lazy">
-            <figcaption>Final assembled hardware result after mechanism design, simulation validation, single-leg testing, and full quadruped assembly.</figcaption>
-          </figure>
-        </div>
-        <details class="analysis-details">
-          <summary>Additional FEA Results</summary>
-          <div class="design-gallery" aria-label="Additional finite element analysis images">
-            <figure class="design-figure">
-              <img src="assets/projects/parallel-link-quadruped-design/motor-housing-fea.png" alt="Finite element analysis of a motor housing component under a 400 N load" loading="lazy">
-              <figcaption>Motor-side housing FEA under a representative 400 N load case.</figcaption>
-            </figure>
-            <figure class="design-figure">
-              <img src="assets/projects/parallel-link-quadruped-design/link-ring-fea.png" alt="Finite element analysis of a ring-shaped parallel-link robot component under a 400 N load" loading="lazy">
-              <figcaption>Ring-shaped load-bearing component with fixed boundary conditions.</figcaption>
-            </figure>
-          </div>
-        </details>
-      </div>
-    </section>
-
-    <section class="section project-detail-grid" aria-label="Control projects">
-      <article class="project-card project-card-large" id="parallel-link-control">
-        <p class="project-label">Hardware RL Control</p>
-        <h2>RL-Based Locomotion Controller</h2>
-        <p>
-          Running experiment with a reinforcement-learning locomotion controller
-          deployed on the parallel-link legged robot platform.
-        </p>
-        <div class="tag-list" aria-label="Parallel-link legged robot control keywords">
-          <span>Reinforcement Learning</span>
-          <span>Sim-to-Real</span>
-          <span>Actuator Model</span>
-          <span>Hardware Test</span>
-        </div>
-      </article>
-      <article class="project-card project-card-large" id="observer-control">
-        <p class="project-label">Observer-Based Control</p>
-        <h2>Observer-Based Contact Robustness Layer</h2>
-        <p>
-          Exploring how observer-based force and disturbance estimates can serve as a
-          structured interface between model-based feedback and learned
-          locomotion policies.
-        </p>
-        <div class="tag-list" aria-label="Observer-based control project keywords">
-          <span>Observer</span>
-          <span>Force Control</span>
-          <span>Contact Control</span>
-        </div>
-      </article>
-      <article class="project-card project-card-large">
-        <p class="project-label">Learning Interface</p>
-        <h2>Action Space and Compliance</h2>
-        <p>
-          Designing experiments to compare compliance, bandwidth, safety, and
-          recovery behavior across common action-space choices in legged RL.
-        </p>
-        <div class="tag-list" aria-label="Action space and compliance keywords">
-          <span>Torque Action</span>
-          <span>Position Target</span>
-          <span>Compliance</span>
-          <span>RL</span>
-        </div>
-      </article>
-      <article class="project-card project-card-large" id="programming">
-        <p class="project-label">Programming</p>
-        <h2>Programming for Robot Experiments</h2>
-        <p>
-          Building experiment software around controller validation, data
-          logging, simulation workflows, and hardware-in-the-loop robot testing.
-        </p>
-        <div class="tag-list" aria-label="Programming project keywords">
-          <span>Programming</span>
-          <span>Experiment Tools</span>
-          <span>Data Logging</span>
-          <span>Controller Validation</span>
-        </div>
-      </article>
-    </section>
-
-    <section class="section video-section" id="videos" aria-labelledby="videos-title">
-      <div class="section-heading">
-        <p class="section-kicker">Media</p>
-        <h2 id="videos-title">Project videos</h2>
-      </div>
-      <div class="video-grid">
-        <article class="video-card">
-          <video class="project-video" controls muted playsinline preload="metadata" poster="assets/running-hero.png">
+      <div class="visual-grid" id="videos">
+        <figure class="visual-card" id="parallel-link-control">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/running.jpg" aria-label="RL running Parallel-link quadruped hardware">
             <source src="assets/videos/running.mp4" type="video/mp4">
           </video>
-          <div class="video-copy">
-            <p class="project-label">RL Locomotion Test</p>
-            <h3>Parallel-Link Robot Running Experiment</h3>
-            <p>
-              Hardware running sequence driven by a reinforcement-learning
-              locomotion controller.
-            </p>
-          </div>
-        </article>
-        <article class="video-card">
-          <video class="project-video" controls muted playsinline preload="metadata">
+          <figcaption><strong>RL running</strong><span>Parallel-link quadruped hardware</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/prop-jumping-motion.jpg" aria-label="Propulsive jumping Hardware experiment">
             <source src="assets/videos/prop-jumping-motion.mp4" type="video/mp4">
           </video>
-          <div class="video-copy">
-            <p class="project-label">RL Locomotion Test</p>
-            <h3>Propulsive Jumping Motion</h3>
-            <p>
-              Hardware jumping sequence for validating propulsive locomotion
-              behavior on the parallel-link robot platform.
-            </p>
-          </div>
-        </article>
-        <article class="video-card">
-          <video class="project-video" controls muted playsinline preload="metadata" poster="assets/tooling/mujoco-quadruped.png">
+          <figcaption><strong>Propulsive jumping</strong><span>Hardware experiment</span></figcaption>
+        </figure>
+      </div>
+        <figure class="visual-card visual-diagram">
+          <a href="assets/publications/s3n-framework.webp" target="_blank" rel="noopener noreferrer" aria-label="Enlarge S3N algorithm"><img src="assets/publications/s3n-framework.webp" alt="S3N pipeline: system identification, simulator-side dynamics normalization, policy training, and deployment" loading="lazy" decoding="async" width="2048" height="1065"></a>
+          <figcaption><strong>S3N algorithm</strong><span>System identification, dynamics normalization &amp; deployment</span></figcaption>
+        </figure>
+    </section>
+
+    <section class="section visual-section" id="quad-v1" aria-labelledby="quad-v1-title">
+      <div class="visual-heading">
+        <div><p class="section-kicker">Earlier platform</p><h2 id="quad-v1-title">Harmonic drive quadruped robot</h2><p class="platform-note">Quad v1 &middot; Harmonic drives at every joint</p></div>
+
+      </div>
+      <div class="visual-grid">
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/quad-v1-walking.jpg" aria-label="Walking Quad v1 &middot; January 2025">
+            <source src="assets/videos/quad-v1/walking.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Walking</strong><span>Quad v1 &middot; January 2025</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/quad-v1-ground-shaking.jpg" aria-label="Ground shaking Body orientation control">
+            <source src="assets/videos/quad-v1/ground-shaking.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Ground shaking</strong><span>Body orientation control</span></figcaption>
+        </figure>
+      </div>
+      <div class="visual-heading visual-subheading" id="observer-control">
+        <div><p class="section-kicker">Cascaded disturbance observer</p><h3 id="cascaded-dob">Body orientation control</h3></div>
+        <a class="project-link" href="index.html#pub-cascaded-dob">AIM 2026 paper &#8599;</a>
+      </div>
+      <div class="visual-grid">
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/quad-v1-body-dob-off.jpg" aria-label="Without Body DOB Inner leg observer only">
+            <source src="assets/videos/quad-v1/body-dob-off.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Without Body DOB</strong><span>Inner leg observer only</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/quad-v1-body-dob-on.jpg" aria-label="With Body DOB Cascaded body &amp; leg observers">
+            <source src="assets/videos/quad-v1/body-dob-on.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>With Body DOB</strong><span>Cascaded body &amp; leg observers</span></figcaption>
+        </figure>
+      </div>
+      <p class="visual-note">Qualitative hardware comparison &middot; &#8805;3 stance contacts &middot; fixed Abad joints &middot; roll/pitch control</p>
+        <figure class="visual-card visual-diagram">
+          <a href="assets/projects/quad-v1/controller.pdf" target="_blank" rel="noopener noreferrer" aria-label="Enlarge Cascaded DOB algorithm"><img src="assets/projects/quad-v1/controller.webp" alt="Cascaded DOB algorithm with outer body observer, body-to-leg mapping, and inner rotating-workspace leg observers" loading="lazy" decoding="async" width="1800" height="819"></a>
+          <figcaption><strong>Cascaded DOB algorithm</strong><span>Outer Body DOB &amp; inner Leg DOB &middot; Click for PDF</span></figcaption>
+        </figure>
+      <details class="visual-more">
+        <summary>Control framework &amp; experimental plots</summary>
+      <div class="visual-grid">
+        <figure class="visual-card visual-diagram">
+          <a href="assets/projects/quad-v1/framework.pdf" target="_blank" rel="noopener noreferrer" aria-label="Enlarge Body-to-leg compensation"><img src="assets/projects/quad-v1/framework.webp" alt="Body orientation compensation mapped to radial leg motion" loading="lazy" decoding="async" width="1800" height="926"></a>
+          <figcaption><strong>Body-to-leg compensation</strong><span>Control framework &middot; Click for PDF</span></figcaption>
+        </figure>
+        <figure class="visual-card visual-diagram">
+          <a href="assets/projects/quad-v1/hardware-results.pdf" target="_blank" rel="noopener noreferrer" aria-label="Enlarge Hardware roll/pitch response"><img src="assets/projects/quad-v1/hardware-results.webp" alt="Hardware snapshots and body angular velocity traces without and with Body DOB" loading="lazy" decoding="async" width="1600" height="1067"></a>
+          <figcaption><strong>Hardware roll/pitch response</strong><span>Original experimental figure &middot; Click for PDF</span></figcaption>
+        </figure>
+      </div>
+      </details>
+    </section>
+
+    <section class="section visual-section" id="system-identification" aria-labelledby="system-id-title">
+      <div class="visual-heading">
+        <div><p class="section-kicker">Frequency-domain modeling</p><h2 id="system-id-title">System identification</h2></div>
+
+      </div>
+      <div class="visual-grid visual-grid-three">
+        <figure class="visual-card visual-plot">
+          <a href="assets/projects/system-identification/actuator-frequency-response.png" target="_blank" rel="noopener noreferrer" aria-label="Enlarge Actuator response"><img src="assets/projects/system-identification/actuator-frequency-response.png" alt="Measured and fitted actuator frequency response" loading="lazy" decoding="async" width="1188" height="1026"></a>
+          <figcaption><strong>Actuator response</strong><span>Inertia, damping &amp; delay</span></figcaption>
+        </figure>
+        <figure class="visual-card visual-plot">
+          <a href="assets/projects/system-identification/mimo-id-bode-mag.pdf" target="_blank" rel="noopener noreferrer" aria-label="Enlarge MIMO magnitude"><img src="assets/projects/system-identification/mimo-id-bode-mag.png" alt="MIMO Bode magnitude comparing experiment, CAD, and identified dynamics" loading="lazy" decoding="async" width="2934" height="1650"></a>
+          <figcaption><strong>MIMO magnitude</strong><span>Click for PDF</span></figcaption>
+        </figure>
+        <figure class="visual-card visual-plot">
+          <a href="assets/projects/system-identification/mimo-id-bode-phase.pdf" target="_blank" rel="noopener noreferrer" aria-label="Enlarge MIMO phase"><img src="assets/projects/system-identification/mimo-id-bode-phase.png" alt="MIMO leg dynamics Bode phase" loading="lazy" decoding="async" width="2934" height="1650"></a>
+          <figcaption><strong>MIMO phase</strong><span>Click for PDF</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/system-id-actuator-id.jpg" aria-label="Actuator ID Hardware excitation">
+            <source src="assets/videos/system-id/actuator-id.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Actuator ID</strong><span>Hardware excitation</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/system-id-mimo-id-sum-x10.jpg" aria-label="MIMO SUM Leg dynamics identification">
+            <source src="assets/videos/system-id/mimo-id-sum-x10.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>MIMO SUM</strong><span>Leg dynamics identification</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/system-id-mimo-id-sub-x10.jpg" aria-label="MIMO SUB Coupled leg dynamics">
+            <source src="assets/videos/system-id/mimo-id-sub-x10.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>MIMO SUB</strong><span>Coupled leg dynamics</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section visual-section" id="parallel-link-design" aria-labelledby="design-title">
+      <div class="visual-heading">
+        <div><p class="section-kicker">Parallel-link platform</p><h2 id="design-title">Design &amp; hardware</h2></div>
+
+      </div>
+      <div class="visual-grid">
+        <figure class="visual-card ">
+          <a href="assets/projects/parallel-link-quadruped-design/final-hardware-picture.jpg" target="_blank" rel="noopener noreferrer" aria-label="Enlarge Assembled hardware"><img src="assets/projects/parallel-link-quadruped-design/final-hardware-picture.jpg" alt="Assembled parallel-link quadruped with red and black leg modules" loading="lazy" decoding="async" width="1240" height="882"></a>
+          <figcaption><strong>Assembled hardware</strong><span>Parallel-link quadruped</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/assemble-video.jpg" aria-label="Robot assembly Frame, actuators &amp; legs">
+            <source src="assets/videos/assemble-video.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Robot assembly</strong><span>Frame, actuators &amp; legs</span></figcaption>
+        </figure>
+        <figure class="visual-card visual-plot">
+          <a href="assets/projects/parallel-link-quadruped-design/leg-mechanism-figure.pdf" target="_blank" rel="noopener noreferrer" aria-label="Enlarge Leg mechanism"><img src="assets/projects/parallel-link-quadruped-design/leg-mechanism-diagram.png" alt="Parallel-link leg mechanism with hip and knee modules and crank linkage" loading="lazy" decoding="async" width="2992" height="1500"></a>
+          <figcaption><strong>Leg mechanism</strong><span>Click for PDF</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/oneleg-test-jumping-admittance.jpg" aria-label="Single-leg test Jumping &amp; admittance landing">
+            <source src="assets/videos/oneleg-test-jumping-admittance.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Single-leg test</strong><span>Jumping &amp; admittance landing</span></figcaption>
+        </figure>
+      </div>
+      <details class="visual-more">
+        <summary>CAD, fabrication &amp; structural analysis</summary>
+      <div class="visual-grid visual-grid-three">
+        <figure class="visual-card visual-plot">
+          <img src="assets/projects/parallel-link-quadruped-design/solidworks-assembly-03.png" alt="SolidWorks parallel-link leg assembly" loading="lazy" decoding="async" width="1264" height="911">
+          <figcaption><strong>Leg assembly CAD</strong><span></span></figcaption>
+        </figure>
+        <figure class="visual-card ">
+          <img src="assets/projects/parallel-link-quadruped-design/assembled-parts.png" alt="Fabricated quadruped components before assembly" loading="lazy" decoding="async" width="639" height="503">
+          <figcaption><strong>Fabricated parts</strong><span></span></figcaption>
+        </figure>
+        <figure class="visual-card visual-plot">
+          <img src="assets/projects/parallel-link-quadruped-design/leg-link-fea.png" alt="Leg link finite element analysis under a representative 400 N load" loading="lazy" decoding="async" width="1564" height="898">
+          <figcaption><strong>Leg link FEA</strong><span>400 N load case</span></figcaption>
+        </figure>
+        <figure class="visual-card visual-plot">
+          <img src="assets/projects/parallel-link-quadruped-design/motor-housing-fea.png" alt="Motor housing finite element analysis" loading="lazy" decoding="async" width="1562" height="984">
+          <figcaption><strong>Motor housing FEA</strong><span></span></figcaption>
+        </figure>
+        <figure class="visual-card visual-plot">
+          <img src="assets/projects/parallel-link-quadruped-design/link-ring-fea.png" alt="Parallel-link ring finite element analysis" loading="lazy" decoding="async" width="1558" height="1002">
+          <figcaption><strong>Link ring FEA</strong><span></span></figcaption>
+        </figure>
+      </div>
+      </details>
+    </section>
+
+    <section class="section visual-section" id="simulation" aria-labelledby="simulation-title">
+      <div class="visual-heading">
+        <div><p class="section-kicker">MuJoCo &amp; Isaac Sim</p><h2 id="simulation-title">Simulation</h2></div>
+
+      </div>
+      <div class="visual-grid">
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/quad-v1-rotating-plate-side.jpg" aria-label="Rotating plate &middot; side view Quad v1 &middot; Body DOB simulation">
+            <source src="assets/videos/quad-v1/rotating-plate-side.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Rotating plate &middot; side view</strong><span>Quad v1 &middot; Body DOB simulation</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/quad-v1-rotating-plate-front.jpg" aria-label="Rotating plate &middot; front view Quad v1 &middot; Body DOB simulation">
+            <source src="assets/videos/quad-v1/rotating-plate-front.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Rotating plate &middot; front view</strong><span>Quad v1 &middot; Body DOB simulation</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/mpc-trot.jpg" aria-label="MPC trot MuJoCo">
             <source src="assets/videos/mpc-trot.mp4" type="video/mp4">
           </video>
-          <div class="video-copy">
-            <p class="project-label">MPC Simulation</p>
-            <h3>MuJoCo MPC Trot Simulation</h3>
-            <p>
-              Model Predictive Control based trot gait simulation in MuJoCo for
-              legged locomotion controller validation.
-            </p>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-placeholder">
-            <span>Disturbance test</span>
-          </div>
-          <div class="video-copy">
-            <p class="project-label">Robustness</p>
-            <h3>Observer-Based Disturbance Response</h3>
-            <p>
-              A video slot for external push, terrain change, or actuator
-              mismatch demonstrations.
-            </p>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-placeholder">
-            <span>Simulation rollout</span>
-          </div>
-          <div class="video-copy">
-            <p class="project-label">Sim-to-Real</p>
-            <h3>Policy Rollout Comparison</h3>
-            <p>
-              A video slot for side-by-side policy rollouts, ablation results,
-              or simulation-to-hardware comparison.
-            </p>
-          </div>
-        </article>
+          <figcaption><strong>MPC trot</strong><span>MuJoCo</span></figcaption>
+        </figure>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/one-leg-landing-mujoco.jpg" aria-label="Single-leg landing MuJoCo">
+            <source src="assets/videos/one-leg-landing-mujoco.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Single-leg landing</strong><span>MuJoCo</span></figcaption>
+        </figure>
       </div>
-      <p class="video-note">
-        Public MP4 files or YouTube links can be embedded here after the videos
-        are ready to share.
-      </p>
+      <details class="visual-more" id="programming">
+        <summary>Policy training rollout</summary>
+        <figure class="visual-card">
+          <video controls muted playsinline preload="none" poster="assets/video-posters/learning-process.jpg" aria-label="Parallel policy training Isaac Sim">
+            <source src="assets/videos/learning-process.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Parallel policy training</strong><span>Isaac Sim</span></figcaption>
+        </figure>
+      </details>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Jinsong Hong. Built with GitHub Pages.</p>
-  </footer>
+  <footer class="site-footer"><p>&copy; 2026 Jinsong Hong.</p></footer>
 </body>
 </html>

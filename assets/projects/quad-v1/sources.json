@@ -1,0 +1,15 @@
+{
+  "project": "Quad v1",
+  "sources": [
+    "2026 AIM / AIM Presentation.pptx",
+    "2026 AIM / Controller.pdf",
+    "2026 AIM / Hardware_Exp.pdf",
+    "2026 AIM / Hardware_Result.pdf",
+    "2026 AIM / WholeFramework.pdf",
+    "2026 AIM / Simulation_Result.pdf",
+    "Quad v1 / Experiment / Experiment Video / Walking / Walking 20250107",
+    "Quad v1 / Experiment / Experiment Video / Orientation DOB / Orientation DOB 2024_0820"
+  ],
+  "note": "Figure exports preserve the source plots. MP4 copies are compressed for web playback with audio removed. Hardware comparisons are qualitative.",
+  "actuation": "Harmonic drive transmission at every joint (confirmed by the robot designer)."
+}
