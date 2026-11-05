@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Personal academic website for Jinsong Hong, a robotics researcher working on dynamics and control-aware learning for sim-to-real legged robots.">
   <title>Jinsong Hong | Robotics Researcher</title>
-  <link rel="stylesheet" href="styles.css?v=visual-projects-20261105a">
+  <link rel="stylesheet" href="styles.css?v=outtakes-20261105a">
+  <script src="outtakes.js?v=20261105a" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -20,19 +21,53 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero hero-with-outtakes" aria-labelledby="hero-title">
       <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Graduate Researcher, DGIST</p>
-        <h1 id="hero-title">Jinsong Hong</h1>
-        <p class="hero-copy">
-          I study dynamics and control-aware learning for sim-to-real legged
-          robots, focusing on dynamics normalization and middle control layers.
-        </p>
-        <div class="hero-actions" aria-label="Profile links">
-          <a class="primary-link" href="#research">Research Focus</a>
-          <a class="secondary-link" href="mailto:hn05198@dgist.ac.kr">Email</a>
+      <div class="hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">Graduate Researcher, DGIST</p>
+          <h1 id="hero-title">Jinsong Hong</h1>
+          <p class="hero-copy">
+            I study dynamics and control-aware learning for sim-to-real legged
+            robots, focusing on dynamics normalization and middle control layers.
+          </p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="primary-link" href="#research">Research Focus</a>
+            <a class="secondary-link" href="mailto:hn05198@dgist.ac.kr">Email</a>
+          </div>
         </div>
+        <aside class="outtake-reel" id="outtakes" aria-labelledby="outtakes-title">
+          <div class="outtake-heading">
+            <div>
+              <p class="outtake-kicker">Behind the scenes</p>
+              <h2 id="outtakes-title">A few falls along the way.</h2>
+            </div>
+            <span class="outtake-count" id="outtake-count">01 / 03</span>
+          </div>
+          <video id="outtake-player" controls autoplay muted playsinline preload="auto" poster="assets/video-posters/outtakes/outtake-01.jpg" aria-label="Bloopers: Outtake 01">
+            <source src="assets/videos/outtakes/outtake-01.mp4" type="video/mp4">
+            <a href="assets/videos/outtakes/outtake-01.mp4">Watch Outtake 01</a>
+          </video>
+          <div class="outtake-choices" role="group" aria-label="Choose a blooper video">
+            <button type="button" class="outtake-choice" aria-pressed="true" aria-controls="outtake-player" data-outtake="assets/videos/outtakes/outtake-01.mp4" data-poster="assets/video-posters/outtakes/outtake-01.jpg" data-label="Outtake 01">
+              <img src="assets/video-posters/outtakes/outtake-01.jpg" alt="" width="80" height="45">
+              <span>Outtake 01</span>
+            </button>
+            <button type="button" class="outtake-choice" aria-pressed="false" aria-controls="outtake-player" data-outtake="assets/videos/outtakes/outtake-02.mp4" data-poster="assets/video-posters/outtakes/outtake-02.jpg" data-label="Outtake 02">
+              <img src="assets/video-posters/outtakes/outtake-02.jpg" alt="" width="80" height="45">
+              <span>Outtake 02</span>
+            </button>
+            <button type="button" class="outtake-choice" aria-pressed="false" aria-controls="outtake-player" data-outtake="assets/videos/outtakes/fail-to-success.mp4" data-poster="assets/video-posters/outtakes/fail-to-success.jpg" data-label="Fail to success">
+              <img src="assets/video-posters/outtakes/fail-to-success.jpg" alt="" width="80" height="45">
+              <span>Fail to success</span>
+            </button>
+          </div>
+          <p class="outtake-caption" aria-live="polite">Now playing: <span id="outtake-label">Outtake 01</span></p>
+          <p class="outtake-error" id="outtake-error" hidden>Video unavailable? <a id="outtake-direct-link" href="assets/videos/outtakes/outtake-01.mp4">Open this video</a>.</p>
+          <noscript>
+            <p class="outtake-caption">More clips: <a href="assets/videos/outtakes/outtake-02.mp4">Outtake 02</a> · <a href="assets/videos/outtakes/fail-to-success.mp4">Fail to success</a></p>
+          </noscript>
+        </aside>
       </div>
     </section>
 

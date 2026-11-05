@@ -16,6 +16,7 @@ Static personal academic website for GitHub Pages.
    index.html
    projects.html
    styles.css
+   outtakes.js
    assets/running-hero.png
    assets/research-hero.svg
    ```
@@ -35,6 +36,9 @@ GitHub Pages normally serves the site automatically for a repository named
 - Add accepted papers, preprints, project pages, and videos in `index.html`.
 - To embed videos, place public MP4 files under `assets/videos/` or replace
   the video placeholders with YouTube/Vimeo embed links.
+- The homepage blooper reel uses `outtakes.js`, `assets/videos/outtakes/`,
+  and `assets/video-posters/outtakes/`. It starts muted, cycles through three
+  clips, and supports manual selection and native playback controls.
 - Project images are stored under `assets/projects/`.
 - Source PDFs for project figures can be stored next to the rendered images.
 - Add a `cv.pdf` file and link it from the Contact section if you want to share a CV.
